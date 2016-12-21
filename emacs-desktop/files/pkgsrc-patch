@@ -1,0 +1,143 @@
+Index: chat/riece/Makefile
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/chat/riece/Makefile,v
+retrieving revision 1.25
+diff -u -r1.25 Makefile
+--- chat/riece/Makefile	23 Nov 2014 06:13:37 -0000	1.25
++++ chat/riece/Makefile	21 Dec 2016 14:37:41 -0000
+@@ -16,7 +16,7 @@
+ 			${EMACS_INFOPREFIX:C|^${PREFIX}/||}
+ 
+ EMACS_VERSIONS_ACCEPTED= \
+-		emacs25 emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox \
++		emacs26 emacs25 emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox \
+ 		xemacs215 xemacs215nox xemacs214 xemacs214nox
+ EMACS_MODULES=	base
+ 
+Index: devel/flim/Makefile
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/devel/flim/Makefile,v
+retrieving revision 1.37
+diff -u -r1.37 Makefile
+--- devel/flim/Makefile	25 Nov 2015 12:49:46 -0000	1.37
++++ devel/flim/Makefile	21 Dec 2016 14:37:43 -0000
+@@ -58,8 +58,8 @@
+ 		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
+ 	done
+ 
+-.include "../../editors/emacs/modules.mk"
++.include "../../wip/emacs-git/modules.mk"
+ 
+ BUILDLINK_API_DEPENDS.apel+=	apel>=10.7
+-.include "../../devel/apel/buildlink3.mk"
++.include "../../wip/apel-git/buildlink3.mk"
+ .include "../../mk/bsd.pkg.mk"
+Index: devel/flim/buildlink3.mk
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/devel/flim/buildlink3.mk,v
+retrieving revision 1.2
+diff -u -r1.2 buildlink3.mk
+--- devel/flim/buildlink3.mk	20 Mar 2009 19:24:13 -0000	1.2
++++ devel/flim/buildlink3.mk	21 Dec 2016 14:37:43 -0000
+@@ -11,7 +11,7 @@
+ 
+ BUILDLINK_CONTENTS_FILTER.flim=	${EGREP} '.*\.el$$|.*\.elc$$'
+ 
+-.include "../../devel/apel/buildlink3.mk"
++.include "../../wip/apel-git/buildlink3.mk"
+ .endif # FLIM_BUILDLINK3_MK
+ 
+ BUILDLINK_TREE+=	-flim
+Index: devel/semi/Makefile
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/devel/semi/Makefile,v
+retrieving revision 1.36
+diff -u -r1.36 Makefile
+--- devel/semi/Makefile	25 Nov 2015 12:49:46 -0000	1.36
++++ devel/semi/Makefile	21 Dec 2016 14:37:45 -0000
+@@ -64,8 +64,8 @@
+ 
+ .include "options.mk"
+ 
+-.include "../../editors/emacs/modules.mk"
++.include "../../wip/emacs-git/modules.mk"
+ 
+-.include "../../devel/apel/buildlink3.mk"
++.include "../../wip/apel-git/buildlink3.mk"
+ .include "../../devel/flim/buildlink3.mk"
+ .include "../../mk/bsd.pkg.mk"
+Index: editors/emacs/modules.mk
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/editors/emacs/modules.mk,v
+retrieving revision 1.20
+diff -u -r1.20 modules.mk
+--- editors/emacs/modules.mk	18 Sep 2016 13:48:34 -0000	1.20
++++ editors/emacs/modules.mk	21 Dec 2016 14:37:45 -0000
+@@ -229,7 +229,8 @@
+ _EMACS_VERSIONS_ALL= \
+ 	emacs20 emacs21 emacs21nox emacs22 emacs22nox emacs23 emacs23nox \
+ 	emacs24 emacs24nox emacs25 emacs25nox \
+-	xemacs214 xemacs214nox xemacs215 xemacs215nox
++	xemacs214 xemacs214nox xemacs215 xemacs215nox \
++	emacs26
+ 
+ _EMACS_PKGDIR_MAP= \
+ 	emacs20@../../editors/emacs20 \
+@@ -242,6 +243,7 @@
+ 	emacs24@../../editors/emacs24 \
+ 	emacs24nox@../../editors/emacs24-nox11 \
+ 	emacs25@../../editors/emacs25 \
++	emacs26@../../wip/emacs-git \
+ 	emacs25nox@../../editors/emacs25-nox11 \
+ 	xemacs214@../../editors/xemacs \
+ 	xemacs214nox@../../editors/xemacs-nox11 \
+Index: misc/bbdb/Makefile
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/misc/bbdb/Makefile,v
+retrieving revision 1.30
+diff -u -r1.30 Makefile
+--- misc/bbdb/Makefile	3 Aug 2015 13:16:58 -0000	1.30
++++ misc/bbdb/Makefile	21 Dec 2016 14:37:48 -0000
+@@ -12,7 +12,7 @@
+ COMMENT=		Insidious Big Brother DataBase, a rolodex-like database Emacs program
+ 
+ # bbdb is included in xemacs-packages
+-EMACS_VERSIONS_ACCEPTED=	emacs25 \
++EMACS_VERSIONS_ACCEPTED=	emacs26 emacs25 \
+ 				emacs24 emacs24nox emacs23 emacs23nox \
+ 				emacs22 emacs22nox emacs21 emacs21nox \
+ 
+@@ -28,7 +28,7 @@
+ INSTALLATION_DIRS=	${EMACS_INFOPREFIX}
+ MAKE_JOBS_SAFE=		no
+ 
+-.include "../../editors/emacs/modules.mk"
++.include "../../wip/emacs-git/modules.mk"
+ 
+ post-extract:
+ 	${RM} -rf ${WRKSRC}/lisp/*.elc
+Index: misc/elscreen/Makefile
+===================================================================
+RCS file: /cvs/cvsroot/pkgsrc/misc/elscreen/Makefile,v
+retrieving revision 1.22
+diff -u -r1.22 Makefile
+--- misc/elscreen/Makefile	13 Feb 2015 14:05:07 -0000	1.22
++++ misc/elscreen/Makefile	21 Dec 2016 14:37:48 -0000
+@@ -32,6 +32,7 @@
+ # Emacs 24 or later is not supported. Try wip/elscreen-current
+ # instead.
+ EMACS_VERSIONS_ACCEPTED= \
++	emacs26 \
+ 	emacs23 emacs23nox \
+ 	emacs22 emacs22nox \
+ 	emacs21 emacs21nox \
+@@ -44,7 +45,7 @@
+ 	${INSTALL_DATA} ${WRKDIR}/*/*.el ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
+ 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/elscreen
+ 
+-.include "../../editors/emacs/modules.mk"
++.include "../../wip/emacs-git/modules.mk"
+ 
+-.include "../../devel/apel/buildlink3.mk"
++.include "../../wip/apel-git/buildlink3.mk"
+ .include "../../mk/bsd.pkg.mk"
