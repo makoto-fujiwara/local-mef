@@ -24,6 +24,8 @@ DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= perl-[0-9]*:../../lang/perl5
 DEPENDS+= pkglint-[0-9]*:../../pkgtools/pkglint
 
+DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
+
 META_PACKAGE=   yes
 
 do-install:
