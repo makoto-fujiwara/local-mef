@@ -10,12 +10,12 @@ HOMEPAGE=       https://github.com/makoto-fujiwara/check-update/
 COMMENT=        Providing environment to execute check-update
 LICENSE=	2-clause-bsd
 
-BUILD_DEPENDS+=	httping-[0-9]*:../../net/httping
-BUILD_DEPENDS+=	curl-[0-9]*:../../www/curl
-BUILD_DEPENDS+=	git-base-[0-9]*:../../devel/git-base
-BUILD_DEPENDS+=	p5-Net-DNS-[0-9]*:../../net/p5-Net-DNS
-BUILD_DEPENDS+=	p5-Algorithm-Diff-[0-9]*:../../devel/p5-Algorithm-Diff
-BUILD_DEPENDS+=	mozilla-rootcerts-[0-9]*:../../security/mozilla-rootcerts
-BUILD_DEPENDS+=	ruby-[0-9]*:../../lang/ruby
+DEPENDS+=	httping-[0-9]*:../../net/httping
+DEPENDS+=	curl-[0-9]*:../../www/curl
+DEPENDS+=	git-base-[0-9]*:../../devel/git-base
+DEPENDS+=	p5-Net-DNS-[0-9]*:../../net/p5-Net-DNS
+DEPENDS+=	p5-Algorithm-Diff-[0-9]*:../../devel/p5-Algorithm-Diff
+DEPENDS+=	mozilla-rootcerts-[0-9]*:../../security/mozilla-rootcerts
+DEPENDS+=	ruby-[0-9]*:../../lang/ruby
 
 .include "../../mk/bsd.pkg.mk"
