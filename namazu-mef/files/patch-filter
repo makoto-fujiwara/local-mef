@@ -1,0 +1,47 @@
+#!/usr/pkg/bin/perl
+# $Id: patch-filter,v 1.5 2011/07/23 01:33:30 makoto Exp $
+# ---------------------------------------
+# patch two lines  for each *.pl file
+# ---------------------------------------
+# usage: 
+#   cd namazu-2.0.17
+#   perl this_file
+use strict;
+
+chdir 'filter';
+my $count = 0;
+foreach my $file ( `ls *.pl ../tests/data/filter/testfilter.pl` ) {
+    chomp($file);
+    my ($BACK) = $file . '.back';
+    rename $file, $BACK;
+#    print $file,"-> $BACK\n";
+
+    my $flag = 0; # for the safety, = 1 when sub filter ($$$$$) found
+    open(BACK,$BACK);
+    open(FILE,">$file");
+    while (<BACK>){
+	if    (   /sub filter\s*\(\$\$\$\$\$\)\s*{/ ) {
+	    $_ = 'sub filter ($$$$$$$$) {'."\n";	 
+	    $flag++;
+	}
+	elsif  (  $flag && /my\s*\(\s*\$orig_cfile, \$cont.*, \$weighted_str, \$headings, \$fields\s*\)/ ) {
+	                                                             $_ =~ s/\$fields/\$fields, \$m_cfile, \$uri, \$fragment/; 
+            $count++;
+	    $flag = 0;							     
+	}
+	print FILE;
+	}
+    close(FILE);
+    close(BACK);
+    unlink $BACK;
+}
+print ' ** ', $count, ' filter files converted for jeedosaquin.', "\n";
+__END__
+
+BEFORE:
+sub filter ($$$$$) {
+    my( $orig_cfile, $contref, $weighted_str, $headings, $fields ) = @_;
+
+AFTER:
+sub filter ($$$$$$$) {
+    my( $orig_cfile, $contref, $weighted_str, $headings, $fields, $uri, $fragment ) = @_;

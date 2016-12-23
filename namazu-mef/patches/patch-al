@@ -1,0 +1,22 @@
+$NetBSD$
+
+Index: scripts/mknmz.in
+===================================================================
+RCS file: /storage/cvsroot/namazu/scripts/mknmz.in,v
+retrieving revision 1.85.4.78
+diff -u -r1.85.4.78 mknmz.in
+--- scripts/mknmz.in	5 Feb 2006 18:53:30 -0000	1.85.4.78
++++ scripts/mknmz.in	24 Mar 2006 01:37:25 -0000
+@@ -787,6 +787,12 @@
+     $$contref = util::readfile($cfile);
+ #    $file_size = length($$contref);
+ 
++#   to enable pre_filter, 
++#   both $conf::pre_filter and conf::pre_filter() should be defined
++    if ( defined($conf::pre_filter)) {
++       conf::pre_filter(\$$contref) ;
++      };
++
+     my ($kanji, $mtype) = apply_filter($orig_cfile, $contref, $weighted_str, $headings, $fields, $shelter_cfile, undef);
+ 
+     if ($English::OSNAME eq "MSWin32" && $shelter_cfile ne "") {

@@ -1,0 +1,14 @@
+$NetBSD$
+
+Add jeedosaquin filter
+
+--- filter/Makefile.in.orig	2006-03-12 21:10:50.000000000 +0900
++++ filter/Makefile.in	2006-03-24 10:49:41.000000000 +0900
+@@ -150,6 +150,7 @@
+ 	      gzip.pl \
+ 	      hnf.pl \
+ 	      html.pl \
++	      jeedosaquin.pl \
+ 	      mailnews.pl \
+ 	      man.pl \
+ 	      mhonarc.pl \

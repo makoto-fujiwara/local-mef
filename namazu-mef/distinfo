@@ -1,0 +1,20 @@
+$NetBSD$
+
+SHA1 (namazu-2.0.21.tar.gz) = 35aaff34d0cdbe96fff24da87671b6f902bb7d43
+RMD160 (namazu-2.0.21.tar.gz) = b5ac1a114dc4730c56a46c24130899f10d37e9bb
+SHA512 (namazu-2.0.21.tar.gz) = c0ce1b8c8b8ce30ee7d28cfed790a9c8585d1b468eefe2ba4ac70976e09329ae04a3a3bbf0b86b9673cfdf206f2b103896daca2f053062f451884fa659b31ea6
+Size (namazu-2.0.21.tar.gz) = 1394048 bytes
+SHA1 (patch-ae) = 0d2ff02063527459727db45abb4164553253a748
+SHA1 (patch-al) = 9625034ceb42218823caddad329516d332e6fdcb
+SHA1 (patch-as) = 9a0c46960b702b2dbcf4cd896025a02a6a7df4da
+SHA1 (patch-ay) = a27b4228071e9066fa35277359946a43e85bf0ed
+SHA1 (patch-az) = 5629350f88ad7edf34347e5f79cda7846d2bd9b2
+SHA1 (patch-filter_Makefile.am) = 47c74b540aafe43ec3ae01d609919393f97a4417
+SHA1 (patch-filter_Makefile.in) = 5648aac7efccce5aa939185b2d0cfd3a7967a0c6
+SHA1 (patch-filter_hnf.pl) = 180afea13a4d4d7904a32fbe783a67d4ef556c84
+SHA1 (patch-filter_jeedousaquin) = be7b916db2adcca57d62738d0c4ff3ec712e5c22
+SHA1 (patch-filter_macbinary.pl) = 08c2deae44c58eed9c2893c37540d34bd3a8e415
+SHA1 (patch-filter_mailnews.pl) = 6912267cd3bd568e6419ed346d17fb8c3ccf989d
+SHA1 (patch-filter_mp3_pl) = 394f394a26017dac0725eb633152f6fa5a32afee
+SHA1 (patch-filter_zip.pl) = 31652bc1b8e9ec10b0840de85f9fa2f0ba2c284a
+SHA1 (patch-pl_htmlsplit.pl) = 01df81373c32254b6cbda760c51fb86e2d987e1e

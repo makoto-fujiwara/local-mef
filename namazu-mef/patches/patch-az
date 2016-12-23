@@ -1,0 +1,28 @@
+$NetBSD$
+
+Fix $fields->{'uri'}; not properly processed found 2011/07
+
+--- work/namazu-2.0.21/scripts/mknmz.in.orig	2011-08-02 15:23:07.000000000 +0900
++++ ./scripts/mknmz.in	2011-08-02 15:25:56.000000000 +0900
+@@ -474,9 +474,11 @@
+     unless ($uri) {
+ 	$uri = generate_uri($cfile);  # Make a URI from a file name.
+     }
++    my ($fragment, $m_cfile, $mmtype_split);
+     my ($cfile_size, $text_size, $kanji, $mtype) = 
+ 	load_document(\$cfile, \$content, \$weighted_str,
+-		      \$headings, \%fields);
++		      \$headings, $fragment, $m_cfile, $part_id, $part_num, $mmtype_split,
++		      \%fields);
+ 
+     {
+         $fields{'mtime'} = (stat($cfile))[9];
+@@ -774,7 +776,7 @@
+ 
+ 
+ # load a document file
+-sub load_document ($$$$$$$\%) {
++sub load_document ($$$$$$$$$\%) {
+     my ($orig_cfile, $contref, $weighted_str, $headings,
+ 	$fragment,
+ 	$m_cfile, $part_id, $part_num, $mmtype_split,  # added

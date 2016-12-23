@@ -1,0 +1,15 @@
+$NetBSD$
+To supress the error as:  (2011/01/31)
+Not enough arguments for mailnews::filter at (eval xxx) line 1, near "$fields)"
+
+--- /usr/pkg/bin/mknmz.orig	2011-01-18 02:36:31.000000000 +0900
++++ scripts/mknmz.in	2011-02-01 00:24:42.000000000 +0900
+@@ -888,7 +888,7 @@
+ 	    {
+ 		local $SIG{'PIPE'} = \&trapintr;
+ 		eval '$err = ' . $var::REQUIRE_ACTIONS{$mtype} .
+-		  '::filter($orig_cfile, $contref, $weighted_str, $headings, $fields);';
++		  '::filter($orig_cfile, $contref, $weighted_str, $headings, $fields, $m_cfile, undef, $fragment);';
+ 	    }
+ 	    if ($err) {
+ 		if ($err =~ m/; x-system=unsupported$/) {

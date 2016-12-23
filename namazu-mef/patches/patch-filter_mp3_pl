@@ -1,0 +1,15 @@
+$NetBSD$
+
+Useless use of greediness modifier '?' in regex; 
+
+--- filter/mp3.pl.orig	2015-03-29 22:52:47.000000000 +0900
++++ filter/mp3.pl	2015-03-29 22:53:30.000000000 +0900
+@@ -152,7 +152,7 @@ sub mp3_filter($$$$) {
+     mp3::get_title($$contref, $weighted_str, $fields);
+     mp3::get_author($$contref, $fields);
+     mp3::get_album($$contref, $fields);
+-    $$contref =~ s/^\w+:{1,1}?//gm;
++    $$contref =~ s/^\w+:{1,1}//gm;
+ 
+     return;
+ }

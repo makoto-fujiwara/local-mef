@@ -1,0 +1,93 @@
+$NetBSD$
+
+Tweak for adding 'jeedosaquin' 
+
+--- scripts/mknmz.in.orig	2010-05-19 02:15:05.000000000 +0900
++++ scripts/mknmz.in	2010-05-19 02:16:50.000000000 +0900
+@@ -185,33 +185,39 @@
+     my ($cfile, $docid_count, $docid_base, $file_count, 
+ 	$field_indices, $fh_errorsfile, $total_files_num) = @_;
+ 
++    # with --html-split, mmtype should be the same within the same file,
++    # and it will be decided in the first part, so, inherit through the partial processing.
++    my $mmtype_split = undef ;
+     my $processed_num = 0;
+     my $file_size = util::filesize($cfile);
+ 
+     if ($var::Opt{'htmlsplit'} && $cfile =~ $conf::HTML_SUFFIX) {
+-	my @parts;
+-	@parts = htmlsplit::split($cfile, "NMZ.partial")
+-            if ($file_size <= $conf::FILE_SIZE_MAX);
++	my (@parts);
++        ($mmtype_split, @parts) = htmlsplit::split($cfile, "NMZ.partial", $Magic);
++#           if ($file_size <= $conf::FILE_SIZE_MAX);
+ 	if (@parts > 1) {
+ 	    my $id = 0;
+ 	    for my $part (@parts) {
++		my $result;
+ 		next if (defined $conf::EXCLUDE_PATH &&
+ 			 "$cfile#$part" =~ /$conf::EXCLUDE_PATH/);
+ 		my $fname = util::tmpnam("NMZ.partial.$id");
+-		my $fragment  = defined $part ? $part : undef;
++		my $fragment  = defined $part ? $part : undef;  #   string starting with #
+ 		my $uri   = generate_uri($cfile, $fragment);
+-		my $result = namazu_core($fname, 
++		($result, $mmtype_split) = namazu_core($fname, 
+ 					 $docid_count + $processed_num, 
+ 					 $docid_base, $file_count, 
+ 					 $field_indices, $fh_errorsfile, 
+ 					 $total_files_num, 
+-					 $uri, $id, $#parts);
++					 $uri, $id, $#parts,
++					 $fragment,
++					 $cfile, $mmtype_split); # add for jeedosaquin
+ 		if ($result > 0) {
+ 		    $processed_num++;
+ 		    my $rname = defined $part ? "$cfile\t$part" : "$cfile";
+ 		    put_registry($rname);
+ 		}
+-	    	unlink $fname;
++		unlink $fname;
+ 		$id++;
+ 	    }
+ 	    return ($file_size, $processed_num);
+@@ -768,8 +774,11 @@
+ 
+ 
+ # load a document file
+-sub load_document ($$$$\%) {
+-    my ($orig_cfile, $contref, $weighted_str, $headings, $fields)
++sub load_document ($$$$$$$\%) {
++    my ($orig_cfile, $contref, $weighted_str, $headings,
++	$fragment,
++	$m_cfile, $part_id, $part_num, $mmtype_split,  # added
++	$fields)
+       = @_;
+     my $cfile = $$orig_cfile;
+ 
+@@ -803,7 +812,11 @@
+        conf::pre_filter(\$$contref) ;
+       };
+ 
+-    my ($kanji, $mtype) = apply_filter($orig_cfile, $contref, $weighted_str, $headings, $fields, $shelter_cfile, undef);
++    my ($kanji, $mtype) = apply_filter
++	($orig_cfile, $contref, 
++	 $weighted_str, $headings, $fields, 
++	 $shelter_cfile, 
++	 $m_cfile, $mmtype_split, $part_id, $fragment);
+ 
+     if ($English::OSNAME eq "MSWin32" && $shelter_cfile ne "") {
+ 	unlink $cfile;
+@@ -816,8 +829,10 @@
+     return ($file_size, $text_size, $kanji, $mtype);
+ }
+ 
+-sub apply_filter($$$$$$$) {
+-    my ($orig_cfile, $contref, $weighted_str, $headings, $fields, $shelter_cfile, $mmtype)
++sub apply_filter($$$$$$$$$$) {
++    my ($orig_cfile, $contref, $weighted_str, $headings, $fields, $shelter_cfile,
++	$m_cfile, 
++	$mmtype, $part_id, $fragment)
+       = @_;
+     my $cfile = $shelter_cfile ne "" ? $shelter_cfile : $$orig_cfile;
+ 
