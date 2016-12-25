@@ -16,7 +16,7 @@ DEPENDS+= emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+= firefox-[0-9]*:../../www/firefox
 DEPENDS+= gimp-[0-9]*:../../graphics/gimp
 DEPENDS+= libreoffice-[0-9]*:../../misc/libreoffice
-DEPENDS+= samba-[0-9]*:../../net/samba
+DEPENDS+= samba-[0-9]*:../../net/samba4
 
 DEPENDS+= rsync-[0-9]*:../../net/rsync
 DEPENDS+= screen-[0-9]*:../../misc/screen
