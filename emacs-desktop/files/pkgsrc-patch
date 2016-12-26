@@ -14,7 +14,6 @@ diff -u -r1.25 Makefile
  		xemacs215 xemacs215nox xemacs214 xemacs214nox
  EMACS_MODULES=	base
  
-
 Index: devel/flim/Makefile
 ===================================================================
 RCS file: /cvs/cvsroot/pkgsrc/devel/flim/Makefile,v
