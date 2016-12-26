@@ -1,0 +1,30 @@
+# $NetBSD$
+
+DISTNAME=       config-desktop-0.04
+CATEGORIES=     meta-pkgs
+
+MAINTAINER=     packages@ki.nu
+HOMEPAGE=       http://www.ki.nu/OHP/
+COMMENT=        Minimum set of Desktop
+
+DEPENDS+= emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
+
+DEPENDS+= firefox-[0-9]*:../../www/firefox
+DEPENDS+= gimp-[0-9]*:../../graphics/gimp
+DEPENDS+= libreoffice-[0-9]*:../../misc/libreoffice
+DEPENDS+= samba-[0-9]*:../../net/samba
+
+DEPENDS+= rsync-[0-9]*:../../net/rsync
+DEPENDS+= screen-[0-9]*:../../misc/screen
+DEPENDS+= zsh-[0-9]*:../../shells/zsh
+DEPENDS+= perl-[0-9]*:../../lang/perl5
+DEPENDS+= pkglint-[0-9]*:../../pkgtools/pkglint
+
+DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
+DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+= inkscape-[0-9]*:../../graphics/inkscape
+DEPENDS+= xlockmore-[0-9]*:../../x11/xlockmore
+
+META_PACKAGE=   yes
+
+.include "../../mk/bsd.pkg.mk"
