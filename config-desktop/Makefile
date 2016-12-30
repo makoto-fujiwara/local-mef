@@ -19,6 +19,9 @@ DEPENDS+= screen-[0-9]*:../../misc/screen
 DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= perl-[0-9]*:../../lang/perl5
 DEPENDS+= pkglint-[0-9]*:../../pkgtools/pkglint
+DEPENDS+= git-base-[0-9]*:../../devel/git-base
+DEPENDS+= git-gitk-[0-9]*:../../devel/git-gitk
+
 
 DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
 DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
