@@ -5,7 +5,7 @@ CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
 HOMEPAGE=       http://www.ki.nu/OHP/
-COMMENT=        Meta package for monitering machine
+COMMENT=        Meta package for monitoring machine
 
 META_PACKAGE=   yes
 
