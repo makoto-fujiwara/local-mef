@@ -22,7 +22,6 @@ EOF
 	;;
 *)
 	echo "Unexpected argument: ${STAGE}"
-	exit 1
 	;;
 esac
 exit 0

@@ -27,6 +27,7 @@ USE_LANGUAGES=		c
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_ENV+=		LANG=ja_JP.eucJP
 
 CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/${DATADIR} \
 			--libexecdir=${PREFIX}/libexec/cgi-bin \
