@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-desktop-0.04
+DISTNAME=       config-desktop-0.05
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -27,6 +27,10 @@ DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
 DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
 DEPENDS+= inkscape-[0-9]*:../../graphics/inkscape
 DEPENDS+= xlockmore-[0-9]*:../../x11/xlockmore
+
+DEPENDS+= xpdf-[0-9]*:../../print/xpdf
+DEPENDS+= wpa_gui-[0-9]*:../../net/wpa_gui
+DEPENDS+= ja-ptex-[0-9]*:../../wip/ja-ptex
 
 META_PACKAGE=   yes
 
