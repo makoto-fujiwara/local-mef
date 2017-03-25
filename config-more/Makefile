@@ -17,14 +17,16 @@ DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	ja-ptex-[0-9]*:../../wip/ja-ptex
 DEPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
 
-DEPENDS+=	klayout-[0-9]*:../../cad/klayout
+#EPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
 DEPENDS+=	gdsreader-[0-9]*:../../cad/gdsreader
 
 DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
+DEPENDS+=	xenvstat-[0-9]*:../../sysutils/xenvstat
 
 DEPENDS+=	cwdiff-[0-9]*:../../textproc/cwdiff
 DEPENDS+=	wdiff-[0-9]*:../../textproc/wdiff
+DEPENDS+=	ja-a2ps-[0-9]*:../../print/ja-a2ps
 
 META_PACKAGE=   yes
 
