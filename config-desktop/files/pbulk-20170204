@@ -1,0 +1,62 @@
+diff -u -p -r1.15 create-report-html.awk
+--- pkgtools/pbulk/files/pbulk/scripts/create-report-html.awk	14 May 2014 14:45:26 -0000	1.15
++++ pkgtools/pbulk/files/pbulk/scripts/create-report-html.awk	22 Mar 2016 21:24:09 -0000
+@@ -225,6 +225,8 @@ BEGIN {
+ 			pkgsrc_platform = substr($0, 10)
+ 		else if ($0 ~ "^COMPILER=")
+ 			pkgsrc_compiler = substr($0, 10)
++		else if ($0 ~ "^COMPILER_VERSION=")
++			compiler_version = substr($0, 18)
+ 		else if ($0 ~ "^BUILD_START_ISO=")
+ 			pkgsrc_build_start_iso = substr($0, 17)
+ 		else if ($0 ~ "^BUILD_END_ISO=")
+Index: pkgtools/pbulk/files/pbulk/scripts/create-report-txt.awk
+===================================================================
+RCS file: /cvsroot/pkgsrc/pkgtools/pbulk/files/pbulk/scripts/create-report-txt.awk,v
+retrieving revision 1.8
+diff -u -p -r1.8 create-report-txt.awk
+--- pkgtools/pbulk/files/pbulk/scripts/create-report-txt.awk	1 Mar 2008 19:04:37 -0000	1.8
++++ pkgtools/pbulk/files/pbulk/scripts/create-report-txt.awk	22 Mar 2016 21:24:09 -0000
+@@ -64,6 +64,8 @@ BEGIN {
+ 			pkgsrc_platform = substr($0, 10)
+ 		else if ($0 ~ "^COMPILER=")
+ 			pkgsrc_compiler = substr($0, 10)
++		else if ($0 ~ "^COMPILER_VERSION=")
++			compiler_version = substr($0, 18)
+ 		else if ($0 ~ "^BUILD_START_ISO=")
+ 			pkgsrc_build_start_iso = substr($0, 17)
+ 		else if ($0 ~ "^BUILD_START_DIR=")
+@@ -122,7 +124,7 @@ BEGIN {
+ 	print "========================" > txt_report
+ 	print "" > txt_report
+ 	print pkgsrc_platform > txt_report
+-	print "Compiler: " pkgsrc_compiler > txt_report
++	print "Compiler: " compiler_version > txt_report
+ 	print "" > txt_report
+ 	print "Build start: " pkgsrc_build_start_iso > txt_report
+ 	print "Build end:   " pkgsrc_build_end_iso > txt_report
+Index: pkgtools/pbulk/files/pbulk/scripts/pre-build
+===================================================================
+RCS file: /cvsroot/pkgsrc/pkgtools/pbulk/files/pbulk/scripts/pre-build,v
+retrieving revision 1.14
+diff -u -p -r1.14 pre-build
+--- pkgtools/pbulk/files/pbulk/scripts/pre-build	12 Sep 2015 23:04:30 -0000	1.14
++++ pkgtools/pbulk/files/pbulk/scripts/pre-build	22 Mar 2016 21:24:09 -0000
+@@ -110,9 +110,17 @@ esac
+ 
+ platform=`cd ${pkgsrc}/pkgtools/pkg_install && ${make} show-var VARNAME=MACHINE_ARCH`
+ compiler=`cd ${pkgsrc}/pkgtools/pkg_install && ${make} show-var VARNAME=PKGSRC_COMPILER`
++clang_version=`cd ${pkgsrc}/pkgtools/pkg_install && clang --version || echo no clang`
++cc_version=`cd ${pkgsrc}/pkgtools/pkg_install && gcc --version || cc --version || echo neither gcc nor cc `
+ 
+ echo "PLATFORM=${opsys} ${opver}/${platform}" > ${loc}/status
+ echo "COMPILER=${compiler}" >> ${loc}/status
++if [ ${compiler} = "clang" ] ;then
++echo "COMPILER_VERSION=${clang_version}" >> ${loc}/status
++else
++echo "COMPILER_VERSION=${cc_version}" >> ${loc}/status
++fi
++
+ 
+ date '+%Y-%m-%d %H:%M|%Y%m%d.%H%M' | sed 's/^\(.*\)|\(.*\)$/BUILD_START_ISO=\1\
+ BUILD_START_DIR=\2/' >> ${loc}/status
