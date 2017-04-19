@@ -9,6 +9,12 @@ COMMENT=
 
 META_PACKAGE=   yes
 
+PKG_OPTIONS_VAR=        PKG_OPTIONS.test-libical
+PKG_SUPPORTED_OPTIONS=  wip
+PKG_SUGGESTED_OPTIONS=
+
+.include "../../mk/bsd.options.mk"
+
 BUILD_DEPENDS+=	empathy-[0-9]*:../../chat/empathy
 BUILD_DEPENDS+=	gnomeicu-[0-9]*:../../chat/gnomeicu
 BUILD_DEPENDS+=	gnome-pilot-[0-9]*:../../comms/gnome-pilot
@@ -56,8 +62,10 @@ BUILD_DEPENDS+=	gnome-power-manager-[0-9]*:../../sysutils/gnome-power-manager
 BUILD_DEPENDS+=	nautilus-sendto-[0-9]*:../../sysutils/nautilus-sendto
 BUILD_DEPENDS+=	evolution-webcal-[0-9]*:../../time/evolution-webcal
 BUILD_DEPENDS+=	gtodo-applet-[0-9]*:../../time/gtodo-applet
-BUILD_DEPENDS+=	libical-[0-9]*:../../time/libical
 BUILD_DEPENDS+=	xfce4-orage-[0-9]*:../../time/xfce4-orage
+
+.if !empty(PKG_OPTIONS:Mwip)
+
 BUILD_DEPENDS+=	alt-ergo-[0-9]*:../../wip/alt-ergo
 BUILD_DEPENDS+=	bijiben-[0-9]*:../../wip/bijiben
 BUILD_DEPENDS+=	cheese-[0-9]*:../../wip/cheese
@@ -80,7 +88,6 @@ BUILD_DEPENDS+=	gnome-todo-[0-9]*:../../wip/gnome-todo
 BUILD_DEPENDS+=	kmymoney-git-[0-9]*:../../wip/kmymoney-git
 BUILD_DEPENDS+=	kmymoney4-[0-9]*:../../wip/kmymoney4
 BUILD_DEPENDS+=	libfolks-[0-9]*:../../wip/libfolks
-BUILD_DEPENDS+=	libical2-[0-9]*:../../wip/libical2
 BUILD_DEPENDS+=	lilyterm-[0-9]*:../../wip/lilyterm
 BUILD_DEPENDS+=	linphone-[0-9]*:../../wip/linphone
 BUILD_DEPENDS+=	mousetweaks-[0-9]*:../../wip/mousetweaks
@@ -88,6 +95,8 @@ BUILD_DEPENDS+=	osmo-[0-9]*:../../wip/osmo
 BUILD_DEPENDS+=	pidgin-evolution-[0-9]*:../../wip/pidgin-evolution
 BUILD_DEPENDS+=	tasks-[0-9]*:../../wip/tasks
 BUILD_DEPENDS+=	why-[0-9]*:../../wip/why
+.endif
+
 BUILD_DEPENDS+=	compiz-fusion-plugins-extra-[0-9]*:../../wm/compiz-fusion-plugins-extra
 BUILD_DEPENDS+=	compiz-fusion-plugins-main-[0-9]*:../../wm/compiz-fusion-plugins-main
 BUILD_DEPENDS+=	compiz-[0-9]*:../../wm/compiz
@@ -100,7 +109,5 @@ BUILD_DEPENDS+=	gnome-session-[0-9]*:../../x11/gnome-session
 BUILD_DEPENDS+=	grandr_applet-[0-9]*:../../x11/grandr_applet
 BUILD_DEPENDS+=	ocaml-lablgtk-[0-9]*:../../x11/ocaml-lablgtk
 BUILD_DEPENDS+=	py-gnome2-desktop-[0-9]*:../../x11/py-gnome2-desktop
-
-
 
 .include "../../mk/bsd.pkg.mk"
