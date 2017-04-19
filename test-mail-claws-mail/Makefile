@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       test-mail-claws-mail-0.01
+DISTNAME=       test-mail-claws-mail-0.02
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
