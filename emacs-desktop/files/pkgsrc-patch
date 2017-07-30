@@ -16,21 +16,24 @@ diff -u -r1.25 Makefile
  
 Index: devel/flim/Makefile
 ===================================================================
-RCS file: /cvs/cvsroot/pkgsrc/devel/flim/Makefile,v
-retrieving revision 1.37
-diff -u -r1.37 Makefile
---- devel/flim/Makefile	25 Nov 2015 12:49:46 -0000	1.37
-+++ devel/flim/Makefile	21 Dec 2016 14:37:43 -0000
-@@ -58,8 +58,8 @@
+RCS file: /cvsroot/pkgsrc/devel/flim/Makefile,v
+retrieving revision 1.38
+diff -u -r1.38 Makefile
+--- devel/flim/Makefile	12 Dec 2016 11:42:49 -0000	1.38
++++ devel/flim/Makefile	30 Jul 2017 03:34:16 -0000
+@@ -58,11 +58,11 @@
  		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
  	done
  
 -.include "../../editors/emacs/modules.mk"
 +.include "../../wip/emacs-git/modules.mk"
  
+ .if (${EMACS_FLAVOR} != "xemacs")
  BUILDLINK_API_DEPENDS.apel+=	apel>=10.7
 -.include "../../devel/apel/buildlink3.mk"
 +.include "../../wip/apel-git/buildlink3.mk"
+ .endif
+ 
  .include "../../mk/bsd.pkg.mk"
 Index: devel/flim/buildlink3.mk
 ===================================================================
