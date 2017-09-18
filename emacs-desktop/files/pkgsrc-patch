@@ -10,7 +10,7 @@ diff -u -r1.25 Makefile
  
  EMACS_VERSIONS_ACCEPTED= \
 -		emacs25 emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox \
-+		emacs26 emacs25 emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox \
++		emacs27 emacs26 emacs25 emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox \
  		xemacs215 xemacs215nox xemacs214 xemacs214nox
  EMACS_MODULES=	base
  
@@ -82,7 +82,7 @@ diff -u -r1.20 modules.mk
  	emacs24 emacs24nox emacs25 emacs25nox \
 -	xemacs214 xemacs214nox xemacs215 xemacs215nox
 +	xemacs214 xemacs214nox xemacs215 xemacs215nox \
-+	emacs26
++	emacs26 emacs27
  
  _EMACS_PKGDIR_MAP= \
  	emacs20@../../editors/emacs20 \
@@ -90,7 +90,7 @@ diff -u -r1.20 modules.mk
  	emacs24@../../editors/emacs24 \
  	emacs24nox@../../editors/emacs24-nox11 \
  	emacs25@../../editors/emacs25 \
-+	emacs26@../../wip/emacs-git \
++	emacs27@../../wip/emacs-git \
  	emacs25nox@../../editors/emacs25-nox11 \
  	xemacs214@../../editors/xemacs \
  	xemacs214nox@../../editors/xemacs-nox11 \
@@ -106,7 +106,7 @@ diff -u -r1.30 Makefile
  
  # bbdb is included in xemacs-packages
 -EMACS_VERSIONS_ACCEPTED=	emacs25 \
-+EMACS_VERSIONS_ACCEPTED=	emacs26 emacs25 \
++EMACS_VERSIONS_ACCEPTED=	emacs27 emacs26 emacs25 \
  				emacs24 emacs24nox emacs23 emacs23nox \
  				emacs22 emacs22nox emacs21 emacs21nox \
  
@@ -145,22 +145,28 @@ diff -u -r1.23 Makefile
  # Emacs 24 or later is not supported. Try wip/elscreen-current
  # instead.
  EMACS_VERSIONS_ACCEPTED= \
-+	emacs26 emacs25 emacs24 \
++	emacs27 emacs26 emacs25 emacs24 \
  	emacs23 emacs23nox \
  	emacs22 emacs22nox \
  	emacs21 emacs21nox \
-Index: editors/emacs/modules.mk
-===================================================================
-RCS file: /cvsroot/pkgsrc/editors/emacs/modules.mk,v
-retrieving revision 1.21
-diff -u -r1.21 modules.mk
---- editors/emacs/modules.mk	1 Jan 2017 02:48:43 -0000	1.21
-+++ editors/emacs/modules.mk	25 Feb 2017 01:56:37 -0000
-@@ -242,6 +242,7 @@
+--- editors/emacs/modules.mk.orig	2017-09-18 22:56:21.649416106 +0900
++++ editors/emacs/modules.mk	2017-09-18 23:04:51.794257544 +0900
+@@ -229,7 +229,8 @@
+ _EMACS_VERSIONS_ALL= \
+ 	emacs20 emacs21 emacs21nox emacs22 emacs22nox emacs23 emacs23nox \
+ 	emacs24 emacs24nox emacs25 emacs25nox \
+-	xemacs214 xemacs214nox xemacs215 xemacs215nox
++	xemacs214 xemacs214nox xemacs215 xemacs215nox \
++	emacs26 emacs27
+ 
+ _EMACS_PKGDIR_MAP= \
+ 	emacs20@../../editors/emacs20 \
+@@ -242,6 +243,8 @@
  	emacs24@../../editors/emacs24 \
  	emacs24nox@../../editors/emacs24-nox11 \
  	emacs25@../../editors/emacs25 \
-+	emacs26@../../wip/emacs-git \
++	emacs26@../../editors/emacs26 \
++	emacs27@../../wip/emacs-git \
  	emacs25nox@../../editors/emacs25-nox11 \
  	xemacs214@../../editors/xemacs \
  	xemacs214nox@../../editors/xemacs-nox11 \
