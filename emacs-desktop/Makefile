@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.01
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.04
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -11,7 +11,7 @@ COMMENT=        Emacs for Desktop
 DEPENDS += compface-[0-9]*:../../graphics/compface
 DEPENDS += libXaw3d-[0-9]*:../../x11/libXaw3d
 #EPENDS += xpm-3.4k:../../graphics/xpm/
-DEPENDS += emacs26-[0-9]*:../../wip/emacs-git
+DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
 #EPENDS += emacs25-[0-9]*:../../wip/emacs-snapshot
 
 # To avoid depending to MesaLib-7.4.4
