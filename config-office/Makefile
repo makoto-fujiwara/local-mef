@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.01
+DISTNAME=       config-office-0.03
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -27,7 +27,7 @@ DEPENDS+=	git-base-[0-9]*:../../devel/git-base
 
 DEPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
-DEPENDS+=	py[0-9]*-gdsCAD-[0-9]*:../../wip/py-gdscad
+#EPENDS+=	py[0-9]*-gdsCAD-[0-9]*:../../wip/py-gdscad
 
 DEPENDS+=	pgstudio-[0-9]*:../../wip/pgstudio
 DEPENDS+=	demime-[0-9]*:../../mail/demime

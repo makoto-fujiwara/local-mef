@@ -17,7 +17,7 @@ WRKSRC=	         ${WRKDIR}
 USE_LANGUAGES=  # none
 
 INSTALLATION_DIRS=      share/emacs/site-lisp/a-files
-.include "../../editors/emacs/modules.mk"
+.include "../../wip/emacs-git/modules.mk"
 
 do-build:
 	pwd
