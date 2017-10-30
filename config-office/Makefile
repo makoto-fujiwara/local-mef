@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.03
+DISTNAME=       config-office-0.04
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -22,6 +22,17 @@ DEPENDS+=	screen-[0-9]*:../../misc/screen
 DEPENDS+=	zsh-[0-9]*:../../shells/zsh
 DEPENDS+=	perl-[0-9]*:../../lang/perl5
 DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
+
+DEPENDS+=	fvwm-[0-9]*:../../wm/fvwm
+DEPENDS+=	automake-[0-9]*:../../devel/automake
+DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
+DEPENDS+=	gmake-[0-9]*:../../devel/gmake
+DEPENDS+=	m4-[0-9]*:../../devel/m4
+
+DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
+DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
+DEPENDS+=	xpdf-japanese-[0-9]*:../../print/xpdf-japanese
+DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
 
 DEPENDS+=	git-base-[0-9]*:../../devel/git-base
 
