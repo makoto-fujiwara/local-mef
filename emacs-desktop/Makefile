@@ -19,6 +19,7 @@ DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
 
 # to avoid devel/apel for oldstye backquote issue
 DEPENDS += apel-[0-9]*:../../wip/apel-git
+DEPENDS += flim-[0-9]*:../../wip/flim
 
 DEPENDS += emacs-w3m-[0-9]*:../../wip/emacs-w3m-cvs
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
