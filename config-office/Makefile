@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.04
+DISTNAME=       config-office-0.05
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -49,6 +49,7 @@ DEPENDS+=	ja-a2ps-[0-9]*:../../print/ja-a2ps
 DEPENDS+=	url2pkg-[0-9]*:../../pkgtools/url2pkg
 DEPENDS+=	pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+=	revbump-[0-9]*:../../pkgtools/revbump
+DEPENDS+=	pkglint-[0-9]*:../../pkgtools/pkglint
 DEPENDS+=	checkperms-[0-9]*:../../sysutils/checkperms
 DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 

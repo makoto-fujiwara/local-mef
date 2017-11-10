@@ -1,0 +1,2 @@
+build	cwrappers>=20150314	../../pkgtools/cwrappers
+full	dvipdfmx-[0-9]*	../../print/dvipdfmx
