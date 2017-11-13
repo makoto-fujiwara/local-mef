@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.05
+DISTNAME=       config-office-0.06
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -33,6 +33,7 @@ DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
 DEPENDS+=	xpdf-japanese-[0-9]*:../../print/xpdf-japanese
 DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
+DEPENDS+=	xenvstat-[0-9]*:../../sysutils/xenvstat
 
 DEPENDS+=	git-base-[0-9]*:../../devel/git-base
 
