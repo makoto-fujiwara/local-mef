@@ -29,7 +29,7 @@ DEPENDS += gmake>=3.79.1:../../devel/gmake/
 
 DEPENDS += rsync>=2:../../net/rsync/
 DEPENDS += unzip>=5:../../archivers/unzip/
-DEPENDS += lha>=1:../../archivers/lha/
+#EPENDS += lha>=1:../../archivers/lha/
 
 DEPENDS += screen>=3:../../misc/screen/
 DEPENDS += idutils>=1:../../devel/idutils
@@ -41,5 +41,5 @@ DEPENDS += boehm-gc>=6:../../devel/boehm-gc/
 DEPENDS += pchar>=1:../../net/pchar/
 DEPENDS += bytebench>=4:../../benchmarks/bytebench/
 DEPENDS += ruby>=1.8:../../lang/ruby
-DEPENDS += cvsync-[0-9]*:../../devel/cvsync
+#EPENDS += cvsync-[0-9]*:../../devel/cvsync
 DEPENDS += pkglint-[0-9]*:../../pkgtools/pkglint

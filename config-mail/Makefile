@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.20 2006/07/18 05:43:28 makoto Exp $
 # $Id: Makefile,v 1.34 2012/08/22 07:07:37 makoto Exp $
 
-DISTNAME=       config-mail-0.1
+DISTNAME=       config-mail-0.2
 CATEGORIES=     meta-pkg
 MASTER_SITES=   
 DISTFILES=      # empty
@@ -31,17 +31,11 @@ DEPENDS+= cy2-plain-[0-9]*:../../security/cy2-plain
 #EPENDS+= cy2-sql-[0-9]*:../../security/cy2-sql         
 
 DEPENDS += net-snmp>=1:../../net/net-snmp
-#EPENDS += netpbm>=10:../../graphics/netpbm
 DEPENDS += mgetty>1:../../comms/mgetty+sendfax
 DEPENDS += mrtg>1:../../net/mrtg
 DEPENDS += qpopper>4:../../mail/qpopper
 DEPENDS += procmail>=1:../../mail/procmail
 #EPENDS += bogofilter>1:../../mail/bogofilter
-#EPENDS += fml>3:../../personal-pkgsrc/fml
-##  ===> Checking for work-directory references in fml-4.0.20040215
-##  /usr/pkg/fml/default_config.ph:$TAR                           = "/export/pkgsrc/personal-pkgsrc/fml/work.s900/.tools/bin/tar cf -";
-##  /usr/pkg/fml/default_config.ph:$ZCAT                          = "/export/pkgsrc/personal-pkgsrc/fml/work.s900/.tools/bin/gzcat";
-
 #
 DEPENDS += bind>=9.2.3nb1:../../net/bind910
 
