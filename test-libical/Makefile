@@ -15,6 +15,8 @@ PKG_SUGGESTED_OPTIONS=
 
 .include "../../mk/bsd.options.mk"
 
+DEPENDS+=	libical-[0-9]*:../../wip/libical2
+
 BUILD_DEPENDS+=	empathy-[0-9]*:../../chat/empathy
 BUILD_DEPENDS+=	gnomeicu-[0-9]*:../../chat/gnomeicu
 BUILD_DEPENDS+=	gnome-pilot-[0-9]*:../../comms/gnome-pilot
@@ -61,7 +63,6 @@ BUILD_DEPENDS+=	seahorse-plugins-[0-9]*:../../security/seahorse-plugins
 BUILD_DEPENDS+=	gnome-power-manager-[0-9]*:../../sysutils/gnome-power-manager
 BUILD_DEPENDS+=	nautilus-sendto-[0-9]*:../../sysutils/nautilus-sendto
 BUILD_DEPENDS+=	evolution-webcal-[0-9]*:../../time/evolution-webcal
-BUILD_DEPENDS+=	gtodo-applet-[0-9]*:../../time/gtodo-applet
 BUILD_DEPENDS+=	xfce4-orage-[0-9]*:../../time/xfce4-orage
 
 .if !empty(PKG_OPTIONS:Mwip)

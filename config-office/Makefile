@@ -34,6 +34,8 @@ DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
 DEPENDS+=	xpdf-japanese-[0-9]*:../../print/xpdf-japanese
 DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
+DEPENDS+=	pavucontrol-[0-9]*:../../audio/pavucontrol
+DEPENDS+=	xenvstat-[0-9]*:../../sysutils/xenvstat
 
 DEPENDS+=	git-base-[0-9]*:../../devel/git-base
 
@@ -52,6 +54,7 @@ DEPENDS+=	pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+=	revbump-[0-9]*:../../pkgtools/revbump
 DEPENDS+=	pkglint-[0-9]*:../../pkgtools/pkglint
 DEPENDS+=	checkperms-[0-9]*:../../sysutils/checkperms
+DEPENDS+=	cwrappers-[0-9]*:../../pkgtools/cwrappers
 DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 
 DEPENDS+=	tex-platex-[0-9]*:../../print/tex-platex
