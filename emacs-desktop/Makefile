@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.04
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.05
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -38,7 +38,7 @@ DEPENDS += umefont-ttf-[0-9]*:../../fonts/umefont-ttf
 #DEPENDS += magit-[0-9]*:../../devel/magit
 
 DEPENDS += anthy-[0-9]*:../../inputmethod/anthy
-DEPENDS += tamago-tsunagi-[0-9]*:../../wip/tamago-tsunagi
+DEPENDS += tamago-tsunagi-[0-9]*:../../inputmethodp/tamago-tsunagi
 DEPENDS += riece-[0-9]*:../../chat/riece
 
 DEPENDS += php-mode-[0-9]*:../../devel/php-mode
