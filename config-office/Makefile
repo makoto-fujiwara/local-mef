@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.06
+DISTNAME=       config-office-0.07
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
