@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.05
+DISTNAME=       config-office-0.06
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -28,6 +28,7 @@ DEPENDS+=	automake-[0-9]*:../../devel/automake
 DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
 DEPENDS+=	gmake-[0-9]*:../../devel/gmake
 DEPENDS+=	m4-[0-9]*:../../devel/m4
+DEPENDS+=	cwrappers-[0-9]*:../../pkgtools/cwrappers
 
 DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
