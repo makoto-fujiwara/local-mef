@@ -11,8 +11,8 @@ COMMENT=        Emacs for Desktop
 DEPENDS += compface-[0-9]*:../../graphics/compface
 DEPENDS += libXaw3d-[0-9]*:../../x11/libXaw3d
 #EPENDS += xpm-3.4k:../../graphics/xpm/
-DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
-#EPENDS += emacs25-[0-9]*:../../wip/emacs-snapshot
+#DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
+EPENDS += emacs25-[0-9]*:../../editors/emacs25
 
 # To avoid depending to MesaLib-7.4.4
 #DEPENDS += MesaLib-[0-9]*:../../wip/MesaLib
@@ -38,7 +38,7 @@ DEPENDS += umefont-ttf-[0-9]*:../../fonts/umefont-ttf
 #DEPENDS += magit-[0-9]*:../../devel/magit
 
 DEPENDS += anthy-[0-9]*:../../inputmethod/anthy
-DEPENDS += tamago-tsunagi-[0-9]*:../../inputmethodp/tamago-tsunagi
+DEPENDS += tamago-tsunagi-[0-9]*:../../inputmethod/tamago-tsunagi
 DEPENDS += riece-[0-9]*:../../chat/riece
 
 DEPENDS += php-mode-[0-9]*:../../devel/php-mode

@@ -43,7 +43,7 @@ DEPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
 #EPENDS+=	py[0-9]*-gdsCAD-[0-9]*:../../wip/py-gdscad
 
-DEPENDS+=	pgstudio-[0-9]*:../../wip/pgstudio
+#EPENDS+=	pgstudio-[0-9]*:../../wip/pgstudio
 DEPENDS+=	demime-[0-9]*:../../mail/demime
 DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
 DEPENDS+=	wget-[0-9]*:../../net/wget
