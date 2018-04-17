@@ -12,7 +12,7 @@ COMMENT=        Meta Package for Mail server
 
 .include "../config-base/Makefile.common"
 
-DEPENDS += sendmail>=1:../../mail/sendmail
+DEPENDS += sendmail>=1:../../wip/sendmail
 DEPENDS += smtpfeed>=1:../../mail/smtpfeed
 DEPENDS += cyrus-imapd>=2:../../mail/cyrus-imapd24
 DEPENDS += cyrus-saslauthd>=2:../../security/cyrus-saslauthd
@@ -33,7 +33,7 @@ DEPENDS+= cy2-plain-[0-9]*:../../security/cy2-plain
 DEPENDS += net-snmp>=1:../../net/net-snmp
 DEPENDS += mgetty>1:../../comms/mgetty+sendfax
 DEPENDS += mrtg>1:../../net/mrtg
-DEPENDS += qpopper>4:../../mail/qpopper
+#EPENDS += qpopper>4:../../mail/qpopper
 DEPENDS += procmail>=1:../../mail/procmail
 #EPENDS += bogofilter>1:../../mail/bogofilter
 #
