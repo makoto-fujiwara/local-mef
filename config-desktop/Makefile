@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-desktop-0.05
+DISTNAME=       config-desktop-0.06
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -33,6 +33,9 @@ DEPENDS+= xlockmore-[0-9]*:../../x11/xlockmore
 DEPENDS+= xpdf-[0-9]*:../../print/xpdf
 DEPENDS+= wpa_gui-[0-9]*:../../net/wpa_gui
 DEPENDS+= ja-ptex-[0-9]*:../../wip/ja-ptex
+
+DEPENDS+= php-[0-9]*:../../lang/php72
+DEPENDS+= gnuplot-[0-9]*:../../graphics/gnuplot
 
 META_PACKAGE=   yes
 
