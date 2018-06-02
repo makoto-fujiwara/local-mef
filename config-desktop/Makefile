@@ -23,6 +23,7 @@ DEPENDS+= pkglint-[0-9]*:../../pkgtools/pkglint
 DEPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+= git-base-[0-9]*:../../devel/git-base
 DEPENDS+= git-gitk-[0-9]*:../../devel/git-gitk
+DEPENDS+= wget-[0-9]*:../../net/wget
 
 
 DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
