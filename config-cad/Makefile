@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-cad-0.02
+DISTNAME=       config-cad-0.04
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -9,7 +9,7 @@ COMMENT=        CAD packages
 
 DEPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
-DEPENDS+=	gdsreader-[0-9]*:../../cad/gdsreader
+DEPENDS+=	gdsreader-[0-9]*:../../wip/gdsreader
 DEPENDS+=	kicad-[0-9]*:../../cad/kicad
 DEPENDS+=	eagle-[0-9]*:../../cad/eagle
 DEPENDS+=	qcad-[0-9]*:../../cad/qcad

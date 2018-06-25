@@ -21,7 +21,7 @@ DEPENDS+=	rsync-[0-9]*:../../net/rsync
 DEPENDS+=	screen-[0-9]*:../../misc/screen
 DEPENDS+=	zsh-[0-9]*:../../shells/zsh
 DEPENDS+=	perl-[0-9]*:../../lang/perl5
-DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+=	sendmail-[0-9]*:../../wip/sendmail
 
 DEPENDS+=	fvwm-[0-9]*:../../wm/fvwm
 DEPENDS+=	automake-[0-9]*:../../devel/automake
