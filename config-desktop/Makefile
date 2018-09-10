@@ -27,7 +27,7 @@ DEPENDS+= wget-[0-9]*:../../net/wget
 
 
 DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
-DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+= sendmail-[0-9]*:../../wip/sendmail
 DEPENDS+= inkscape-[0-9]*:../../graphics/inkscape
 DEPENDS+= xlockmore-[0-9]*:../../x11/xlockmore
 

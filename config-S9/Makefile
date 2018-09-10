@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-S9-0.01
+DISTNAME=       config-S9-0.02
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -27,7 +27,7 @@ DEPENDS+=	gnutls-[0-9]*:../../security/gnutls
 #EPENDS+=	flim-[0-9]*:../../wip/flim
 #EPENDS+=	semi-[0-9]*:../../devel/semi
 #EPENDS+=	wl-[0-9]*:../../wip/wl-git
-#EPENDS+=	tc-[0-9]*:../../wip/tc-git
+#EPENDS+=	tc-[0-9]*:../../wip/tc
 #EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 #EPENDS+=	libflashsupport-[0-9]*:../../multimedia/libflashsupport
 #EPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
@@ -35,7 +35,7 @@ DEPENDS+=	alsa-plugins-pulse-[0-9]*:../../audio/alsa-plugins-pulse
 DEPENDS+=	pavucontrol-[0-9]*:../../audio/pavucontrol
 DEPENDS+=	pkg_rolling-replace-[0-9]*:../../pkgtools/pkg_rolling-replace
 DEPENDS+=	wget-[0-9]*:../../net/wget
-DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+=	sendmail-[0-9]*:../../wip/sendmail
 
 
 

@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.05
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.06
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -31,7 +31,7 @@ DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 DEPENDS += wl-[0-9]*:../../wip/wl-git
 
 DEPENDS += auctex-[0-9]*:../../print/auctex
-DEPENDS += tc-[0-9]*:../../wip/tc-git
+DEPENDS += tc-[0-9]*:../../wip/tc
 DEPENDS += twittering-mode-[0-9]*:../../wip/twittering-mode-git
 DEPENDS += elscreen-[0-9]*:../../misc/elscreen
 DEPENDS += umefont-ttf-[0-9]*:../../fonts/umefont-ttf
