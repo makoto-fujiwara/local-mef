@@ -9,6 +9,7 @@ COMMENT=        CAD packages
 
 DEPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
+DEPENDS+=	p5-GD-[0-9]*:../../graphics/p5-GD
 DEPENDS+=	gdsreader-[0-9]*:../../wip/gdsreader
 DEPENDS+=	kicad-[0-9]*:../../cad/kicad
 DEPENDS+=	eagle-[0-9]*:../../cad/eagle
