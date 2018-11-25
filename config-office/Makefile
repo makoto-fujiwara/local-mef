@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.07
+DISTNAME=       config-office-0.08
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -14,6 +14,7 @@ META_PACKAGE=	yes
 DEPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	firefox-[0-9]*:../../www/firefox
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
+DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 
 DEPENDS+=	sudo-[0-9]*:../../security/sudo
@@ -62,7 +63,12 @@ DEPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ry
 DEPENDS+=	namazu-[0-9]*:../../local-mef/namazu-mef
 DEPENDS+=	gnuplot-[0-9]*:../../graphics/gnuplot
 DEPENDS+=	p5-Jcode-[0-9]*:../../converters/p5-Jcode
+DEPENDS+=	libzip-[0-9]*:../../archivers/libzip
 DEPENDS+=	apache-[0-9]*:../../www/apache24
+
+DEPENDS+=      php-[0-9]*:../../lang/php72
+DEPENDS+=      gnuplot-[0-9]*:../../graphics/gnuplot
+
 
 #do-install:
 #        # empty
