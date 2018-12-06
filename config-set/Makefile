@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-set-0.02
+DISTNAME=       config-set-0.03
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -13,6 +13,8 @@ DEPENDS+=	config-cad-[0-9]*:../../local-mef/config-cad
 DEPENDS+=	config-devel-[0-9]*:../../local-mef/config-devel
 DEPENDS+=	config-monitor-[0-9]*:../../local-mef/config-monitor
 DEPENDS+=	config-more-[0-9]*:../../local-mef/config-more
+DEPENDS+=	config-latex-[0-9]*:../../local-mef/config-latex
+DEPENDS+=	config-concrete5-[0-9]*:../../local-mef/config-concrete5
 
 DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
 
