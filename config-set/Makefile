@@ -14,7 +14,7 @@ DEPENDS+=	config-devel-[0-9]*:../../local-mef/config-devel
 DEPENDS+=	config-monitor-[0-9]*:../../local-mef/config-monitor
 DEPENDS+=	config-more-[0-9]*:../../local-mef/config-more
 DEPENDS+=	config-latex-[0-9]*:../../local-mef/config-latex
-DEPENDS+=	config-concrete5-[0-9]*:../../local-mef/config-concrete5
+#EPENDS+=	config-concrete5-[0-9]*:../../local-mef/config-concrete5
 
 DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
 
