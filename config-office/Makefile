@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.08
+DISTNAME=       config-office-0.09
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -68,6 +68,9 @@ DEPENDS+=	apache-[0-9]*:../../www/apache24
 
 DEPENDS+=      php-[0-9]*:../../lang/php72
 DEPENDS+=      gnuplot-[0-9]*:../../graphics/gnuplot
+
+DEPENDS+=	vncviewer-[0-9]*:../../net/vncviewer
+DEPENDS+=	base64-[0-9]*:../../converters/base64
 
 
 #do-install:
