@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-latex-0.03
+DISTNAME=       config-latex-0.04
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -10,6 +10,8 @@ HOMEPAGE=       http://www.ki.nu/OHP/
 COMMENT=        Set for Office work
 
 META_PACKAGE=	yes
+
+DEPENDS+=	tex-cjk-[0-9]*:../../print/tex-cjk
 DEPENDS+=	tex-rsfs-[0-9]*:../../fonts/tex-rsfs
 DEPENDS+=	tex-psnfss-[0-9]*:../../fonts/tex-psnfss
 DEPENDS+=	tex-paralist-[0-9]*:../../print/tex-paralist
