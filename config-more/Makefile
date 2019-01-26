@@ -14,7 +14,7 @@ DEPENDS+= 	magicpoint-[0-9]*:../../graphics/magicpoint
 DEPENDS+=	exif-[0-9]*:../../graphics/exif
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 
-DEPENDS+=	ja-ptex-[0-9]*:../../wip/ja-ptex
+#EPENDS+=	ja-ptex-[0-9]*:../../wip/ja-ptex
 DEPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
 
 #EPENDS+=	klayout-[0-9]*:../../cad/klayout

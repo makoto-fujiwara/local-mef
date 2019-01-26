@@ -16,7 +16,7 @@ DEPENDS+=	config-more-[0-9]*:../../local-mef/config-more
 DEPENDS+=	config-latex-[0-9]*:../../local-mef/config-latex
 #EPENDS+=	config-concrete5-[0-9]*:../../local-mef/config-concrete5
 
-DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
+#EPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
 
 META_PACKAGE=   yes
 
