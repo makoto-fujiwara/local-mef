@@ -7,7 +7,7 @@ MAINTAINER=     packages@ki.nu
 HOMEPAGE=       http://github.com/makoto-fujiwara/local-mef/${PKGBASE}
 COMMENT=        Owncloud with apache
 
-DEPENDS+=	www/php-owncloud-[0-9]*:../../www/php-owncloud
+DEPENDS+=	php-owncloud-[0-9]*:../../wip/php-owncloud
 DEPENDS+=	apache[0-9]*-[0-9]*:../../www/apache24
 DEPENDS+=	ap[0-9]*-php-[0-9]*:../../www/ap-php
 DEPENDS+=	php[0-9]*-intl-[0-9]*:../../textproc/php-intl
