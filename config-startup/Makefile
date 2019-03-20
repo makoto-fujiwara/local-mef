@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-startup-0.1
+DISTNAME=       config-startup-0.2
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -20,5 +20,6 @@ DEPENDS+= sudo-[0-9]*:../../security/sudo
 DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= checkperms-[0-9]*:../../sysutils/checkperms
 DEPENDS+= sendmail-[0-9]*:../../wip/sendmail
+DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
 
 .include "../../mk/bsd.pkg.mk"

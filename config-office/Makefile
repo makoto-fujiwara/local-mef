@@ -11,7 +11,7 @@ COMMENT=        Set for Office work
 
 META_PACKAGE=	yes
 
-DEPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
+#EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	firefox-[0-9]*:../../www/firefox
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
