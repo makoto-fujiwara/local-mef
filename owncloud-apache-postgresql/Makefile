@@ -11,7 +11,8 @@ DEPENDS+=	php[0-9]*-owncloud-[0-9]*:../../www/php-owncloud
 DEPENDS+=	apache-[0-9]*:../../www/apache24
 DEPENDS+=	ap[0-9]*-php[0-9]*-[0-9]*:../../www/ap-php
 DEPENDS+=	php[0-9]*-intl-[0-9]*:../../textproc/php-intl
-#EPENDS+=	postgresql96-server-[0-9]*:../../databases/postgresql96-server
+DEPENDS+=	postgresql96-server-[0-9]*:../../databases/postgresql96-server
+BUILD_DEPENDS+=	postgresql96-client-[0-9]*:../../databases/postgresql96-client
 DEPENDS+=	php[0-9]*-pdo_pgsql-[0-9]*:../../databases/php-pdo_pgsql
 
 META_PACKAGE=   yes
