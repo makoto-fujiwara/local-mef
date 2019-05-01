@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-latex-0.05
+DISTNAME=       config-latex-0.06
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -32,5 +32,6 @@ DEPENDS+=	tex-ctable-[0-9]*:../../print/tex-ctable
 DEPENDS+=	tex-booktabs-[0-9]*:../../print/tex-booktabs
 DEPENDS+=	tex-multirow-[0-9]*:../../print/tex-multirow
 DEPENDS+=	tex-fontspec-[0-9]*:../../fonts/tex-fontspec
+DEPENDS+=	mendexk-[0-9]*:../../textproc/mendexk
 
 .include "../../mk/bsd.pkg.mk"
