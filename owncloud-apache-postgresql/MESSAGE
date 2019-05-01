@@ -1,4 +1,6 @@
-  1.  ${PREFIX}/etc/httpd/httpd.conf
+===========================================================================
+$NetBSD$
+1.  ${PREFIX}/etc/httpd/httpd.conf
    - Adjust ${PREFIX}/share/owncloud to be URL
    - Add following fragment
     -----------------------------------
@@ -8,3 +10,4 @@
     </Directory>
     Alias /cloud /usr/pkg/share/owncloud
     -----------------------------------
+===========================================================================
