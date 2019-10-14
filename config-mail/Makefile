@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.20 2006/07/18 05:43:28 makoto Exp $
 # $Id: Makefile,v 1.34 2012/08/22 07:07:37 makoto Exp $
 
-DISTNAME=       config-mail-0.2
+DISTNAME=       config-mail-0.3
 CATEGORIES=     meta-pkg
 MASTER_SITES=   
 DISTFILES=      # empty
@@ -12,7 +12,7 @@ COMMENT=        Meta Package for Mail server
 
 .include "../config-base/Makefile.common"
 
-DEPENDS += sendmail>=1:../../wip/sendmail
+DEPENDS += sendmail>=1:../../mail/sendmail
 DEPENDS += smtpfeed>=1:../../mail/smtpfeed
 DEPENDS += cyrus-imapd>=2:../../mail/cyrus-imapd24
 DEPENDS += cyrus-saslauthd>=2:../../security/cyrus-saslauthd
@@ -37,7 +37,7 @@ DEPENDS += mrtg>1:../../net/mrtg
 DEPENDS += procmail>=1:../../mail/procmail
 #EPENDS += bogofilter>1:../../mail/bogofilter
 #
-DEPENDS += bind>=9.2.3nb1:../../net/bind910
+DEPENDS += bind>=9.2.3nb1:../../net/bind914
 
 DEPENDS += spamassassin>=3.0:../../mail/spamassassin/
 DEPENDS += spamass-milter>=0.3:../../mail/spamass-milter/
