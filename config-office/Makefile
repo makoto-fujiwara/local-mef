@@ -33,7 +33,7 @@ DEPENDS+=	cwrappers-[0-9]*:../../pkgtools/cwrappers
 
 DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
-DEPENDS+=	evince-[0-9]*:../../print/evince
+DEPENDS+=	evince-[0-9]*:../../print/evince3
 DEPENDS+=	xpdf-japanese-[0-9]*:../../print/xpdf-japanese
 DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
 DEPENDS+=	pavucontrol-[0-9]*:../../audio/pavucontrol
