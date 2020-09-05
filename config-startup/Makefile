@@ -19,7 +19,7 @@ DEPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+= sudo-[0-9]*:../../security/sudo
 DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= checkperms-[0-9]*:../../sysutils/checkperms
-DEPENDS+= sendmail-[0-9]*:../../wip/sendmail
+DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
 DEPENDS+= fvwm-[0-9]*:../../wm/fvwm
 
 .include "../../mk/bsd.pkg.mk"
