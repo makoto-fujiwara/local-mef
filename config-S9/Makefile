@@ -35,7 +35,7 @@ DEPENDS+=	alsa-plugins-pulse-[0-9]*:../../audio/alsa-plugins-pulse
 DEPENDS+=	pavucontrol-[0-9]*:../../audio/pavucontrol
 DEPENDS+=	pkg_rolling-replace-[0-9]*:../../pkgtools/pkg_rolling-replace
 DEPENDS+=	wget-[0-9]*:../../net/wget
-DEPENDS+=	sendmail-[0-9]*:../../wip/sendmail
+DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
 
 
 
