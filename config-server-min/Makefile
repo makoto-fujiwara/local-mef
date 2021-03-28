@@ -26,7 +26,7 @@ DEPENDS+= rsync-[0-9]*:../../net/rsync
 DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= wget-[0-9]*:../../net/wget
 DEPENDS+= screen-[0-9]*:../../misc/screen
-DEPENDS+= sendmail-[0-9]*:../../wip/sendmail
+DEPENDS+= sendmail-[0-9]*:../../mail/sendmail
 DEPENDS+= exif-[0-9]*:../../graphics/exif
 
 DEPENDS+= checkperms-[0-9]*:../../sysutils/checkperms
