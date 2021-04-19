@@ -35,7 +35,7 @@ DEPENDS+= xpdf-[0-9]*:../../print/xpdf
 DEPENDS+= wpa_gui-[0-9]*:../../net/wpa_gui
 #EPENDS+= ja-ptex-[0-9]*:../../wip/ja-ptex
 
-DEPENDS+= php-[0-9]*:../../lang/php72
+DEPENDS+= php-[0-9]*:../../lang/php74
 DEPENDS+= gnuplot-[0-9]*:../../graphics/gnuplot
 
 META_PACKAGE=   yes
