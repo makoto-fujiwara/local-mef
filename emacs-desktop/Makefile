@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.06
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.08
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -13,8 +13,8 @@ DEPENDS += libXaw3d-[0-9]*:../../x11/libXaw3d
 #EPENDS += xpm-3.4k:../../graphics/xpm/
 #DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
 #EPENDS += emacs28-[0-9]*:../../editors/emacs-snapshot
-#EPENDS += emacs26-[0-9]*:../../editors/emacs26
-DEPENDS += emacs27-[0-9]*:../../editors/emacs27
+DEPENDS += emacs26-[0-9]*:../../editors/emacs26
+#EPENDS += emacs27-[0-9]*:../../editors/emacs27
 
 # To avoid depending to MesaLib-7.4.4
 #DEPENDS += MesaLib-[0-9]*:../../wip/MesaLib
@@ -30,7 +30,8 @@ DEPENDS += im-[0-9]*:../../mail/im
 DEPENDS += mu-cite-[0-9]*:../../wip/mu-cite
 DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 
-DEPENDS += wl-[0-9]*:../../wip/wl-git
+#EPENDS += wl-[0-9]*:../../wip/wl-git
+DEPENDS += wl-[0-9]*:../../mail/wl-snapshot
 
 DEPENDS += auctex-[0-9]*:../../print/auctex
 DEPENDS += tc-[0-9]*:../../wip/tc

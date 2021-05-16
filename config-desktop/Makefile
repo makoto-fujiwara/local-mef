@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-desktop-0.06
+DISTNAME=       config-desktop-0.07
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -20,7 +20,7 @@ DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= sudo-[0-9]*:../../security/sudo
 DEPENDS+= perl-[0-9]*:../../lang/perl5
 DEPENDS+= pkglint-[0-9]*:../../pkgtools/pkglint
-DEPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
+#EPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+= git-base-[0-9]*:../../devel/git-base
 DEPENDS+= git-gitk-[0-9]*:../../devel/git-gitk
 DEPENDS+= wget-[0-9]*:../../net/wget
@@ -37,6 +37,8 @@ DEPENDS+= wpa_gui-[0-9]*:../../net/wpa_gui
 
 DEPENDS+= php-[0-9]*:../../lang/php74
 DEPENDS+= gnuplot-[0-9]*:../../graphics/gnuplot
+DEPENDS+= xournalpp-[0-9]*:../../editors/xournalpp
+DEPENDS+= irssi-[0-9]*:../../chat/irssi
 
 META_PACKAGE=   yes
 
