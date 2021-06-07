@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-startup-0.2
+DISTNAME=       config-startup-0.3
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -15,7 +15,7 @@ DEPENDS+= rsync-[0-9]*:../../net/rsync
 DEPENDS+= wget-[0-9]*:../../net/wget
 DEPENDS+= cwrappers-[0-9]*:../../pkgtools/cwrappers
 DEPENDS+= digest-[0-9]*:../../pkgtools/digest
-DEPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
+#EPENDS+= pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+= sudo-[0-9]*:../../security/sudo
 DEPENDS+= zsh-[0-9]*:../../shells/zsh
 DEPENDS+= checkperms-[0-9]*:../../sysutils/checkperms
