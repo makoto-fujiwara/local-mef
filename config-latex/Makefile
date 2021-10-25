@@ -1,12 +1,12 @@
 # $NetBSD$
 
-DISTNAME=       config-latex-0.07
-CATEGORIES=     local-mef
-DISTFILES=      # empty
+DISTNAME=	config-latex-0.07
+CATEGORIES=	local-mef
+DISTFILES=	# empty
 
-MAINTAINER=     packages@ki.nu
-HOMEPAGE=       http://www.ki.nu/OHP/
-COMMENT=        Meta package for Japanese LaTex Processing
+MAINTAINER=	packages@ki.nu
+HOMEPAGE=	http://www.ki.nu/OHP/
+COMMENT=	Meta package for Japanese LaTex Processing
 
 META_PACKAGE=	yes
 
@@ -33,5 +33,6 @@ DEPENDS+=	tex-xkeyval-[0-9]*:../../print/tex-xkeyval
 DEPENDS+=	mendexk-[0-9]*:../../textproc/mendexk
 DEPENDS+=	dvipdfmx-[0-9]*:../../print/dvipdfmx
 DEPENDS+=	xpdf-japanese-[0-9]*:../../print/xpdf-japanese
+DEPENDS+=	tex-cjk-gs-integrate-[0-9]*:../../print/tex-cjk-gs-integrate
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-more-0.04
+DISTNAME=       config-more-2021.09
 CATEGORIES=     meta-pkgs
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -31,7 +31,7 @@ DEPENDS+=	ja-a2ps-[0-9]*:../../print/ja-a2ps
 DEPENDS+=	openconnect-[0-9]*:../../net/openconnect
 DEPENDS+=	nmap-[0-9]*:../../net/nmap
 DEPENDS+=	libzip-[0-9]*:../../archivers/libzip
-DEPENDS+=	xv-[0-9]*:../../graphics/xv
+#EPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	p5-CGI-[0-9]*:../../www/p5-CGI
 DEPENDS+=	p5-CGI-Session-[0-9]*:../../www/p5-CGI-Session
 DEPENDS+=	qrencode-[0-9]*:../../converters/qrencode

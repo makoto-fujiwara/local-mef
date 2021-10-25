@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-0.13
+DISTNAME=       config-office-2021.09
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -14,7 +14,7 @@ META_PACKAGE=	yes
 #EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	firefox-[0-9]*:../../www/firefox
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
-DEPENDS+=	xv-[0-9]*:../../graphics/xv
+#EPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 
 DEPENDS+=	sudo-[0-9]*:../../security/sudo
@@ -52,7 +52,7 @@ DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	ja-a2ps-[0-9]*:../../print/ja-a2ps
 DEPENDS+=	url2pkg-[0-9]*:../../pkgtools/url2pkg
-DEPENDS+=	pkgin-[0-9]*:../../pkgtools/pkgin
+#DEPENDS+=	pkgin-[0-9]*:../../pkgtools/pkgin
 DEPENDS+=	revbump-[0-9]*:../../pkgtools/revbump
 DEPENDS+=	pkglint-[0-9]*:../../pkgtools/pkglint
 DEPENDS+=	checkperms-[0-9]*:../../sysutils/checkperms
