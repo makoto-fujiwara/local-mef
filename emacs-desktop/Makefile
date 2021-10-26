@@ -23,7 +23,7 @@ DEPENDS += emacs26-[0-9]*:../../editors/emacs26
 DEPENDS += apel-[0-9]*:../../wip/apel-git
 DEPENDS += flim-[0-9]*:../../local-mef/flim-git
 
-DEPENDS += emacs-w3m-[0-9]*:../../wip/emacs-w3m-cvs
+DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
 DEPENDS += gnutls-[0-9]*:../../security/gnutls
 DEPENDS += im-[0-9]*:../../mail/im

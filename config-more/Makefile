@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-more-2021.09
+DISTNAME=       config-more-2021.10
 CATEGORIES=     meta-pkgs
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -15,7 +15,7 @@ DEPENDS+=	exif-[0-9]*:../../graphics/exif
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 
 #EPENDS+=	ja-ptex-[0-9]*:../../wip/ja-ptex
-DEPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
+#EPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
 
 #EPENDS+=	klayout-[0-9]*:../../cad/klayout
 DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2

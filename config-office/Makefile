@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-2021.09
+DISTNAME=       config-office-2021.10
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -60,7 +60,7 @@ DEPENDS+=	cwrappers-[0-9]*:../../pkgtools/cwrappers
 DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 
 DEPENDS+=	tex-platex-[0-9]*:../../print/tex-platex
-DEPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
+#EPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
 DEPENDS+=	namazu-[0-9]*:../../local-mef/namazu-mef
 DEPENDS+=	gnuplot-[0-9]*:../../graphics/gnuplot
 DEPENDS+=	p5-Jcode-[0-9]*:../../converters/p5-Jcode
