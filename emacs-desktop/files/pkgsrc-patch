@@ -1,19 +1,10 @@
 Index: chat/riece/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/chat/riece/Makefile,v
-retrieving revision 1.26
-diff -u -r1.26 Makefile
---- chat/riece/Makefile	29 Sep 2017 12:40:26 -0000	1.26
-+++ chat/riece/Makefile	14 Oct 2017 22:58:15 -0000
-@@ -16,7 +16,7 @@
- 			${EMACS_INFOPREFIX:C|^${PREFIX}/||}
- 
- EMACS_VERSIONS_ACCEPTED= \
--		emacs25 emacs21 emacs21nox \
-+		emacs27 emacs26 emacs25 emacs21 emacs21nox \
- 		xemacs215 xemacs215nox xemacs214 xemacs214nox
- EMACS_MODULES=	base
- 
+retrieving revision 1.30
+diff -u -r1.30 Makefile
+--- chat/riece/Makefile	18 Jan 2020 23:30:12 -0000	1.30
++++ chat/riece/Makefile	26 Jan 2022 14:00:00 -0000
 @@ -40,6 +40,6 @@
  		${INSTALL_DATA} $$file ${DESTDIR}${EMACS_LISPPREFIX}/riece; \
  	done
@@ -25,10 +16,10 @@ diff -u -r1.26 Makefile
 Index: devel/flim/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/devel/flim/Makefile,v
-retrieving revision 1.39
-diff -u -r1.39 Makefile
---- devel/flim/Makefile	18 Apr 2017 16:26:45 -0000	1.39
-+++ devel/flim/Makefile	14 Oct 2017 22:58:18 -0000
+retrieving revision 1.41
+diff -u -r1.41 Makefile
+--- devel/flim/Makefile	11 May 2021 02:05:07 -0000	1.41
++++ devel/flim/Makefile	26 Jan 2022 14:00:00 -0000
 @@ -58,11 +58,11 @@
  		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
  	done
@@ -39,7 +30,7 @@ diff -u -r1.39 Makefile
  .if (${EMACS_FLAVOR} != "xemacs")
  BUILDLINK_API_DEPENDS.apel+=	apel>=10.7
 -.include "../../devel/apel/buildlink3.mk"
-+.include "../../wip/apel-git/buildlink3.mk"
++.include "../../local-mef/apel-snapshot/buildlink3.mk"
  .endif
  
  .include "../../mk/bsd.pkg.mk"
@@ -49,13 +40,13 @@ RCS file: /cvsroot/pkgsrc/devel/flim/buildlink3.mk,v
 retrieving revision 1.2
 diff -u -r1.2 buildlink3.mk
 --- devel/flim/buildlink3.mk	20 Mar 2009 19:24:13 -0000	1.2
-+++ devel/flim/buildlink3.mk	14 Oct 2017 22:58:18 -0000
++++ devel/flim/buildlink3.mk	26 Jan 2022 14:00:00 -0000
 @@ -11,7 +11,7 @@
  
  BUILDLINK_CONTENTS_FILTER.flim=	${EGREP} '.*\.el$$|.*\.elc$$'
  
 -.include "../../devel/apel/buildlink3.mk"
-+.include "../../wip/apel-git/buildlink3.mk"
++.include "../../local-mef/apel-snapshot/buildlink3.mk"
  .endif # FLIM_BUILDLINK3_MK
  
  BUILDLINK_TREE+=	-flim
@@ -65,7 +56,7 @@ RCS file: /cvsroot/pkgsrc/devel/php-mode/Makefile,v
 retrieving revision 1.8
 diff -u -r1.8 Makefile
 --- devel/php-mode/Makefile	3 Sep 2017 08:53:07 -0000	1.8
-+++ devel/php-mode/Makefile	14 Oct 2017 22:58:20 -0000
++++ devel/php-mode/Makefile	26 Jan 2022 14:00:00 -0000
 @@ -22,5 +22,5 @@
  	${INSTALL_DATA} ${WRKSRC}/php-mode.e* \
  		${DESTDIR}${EMACS_LISPPREFIX}/php-mode
@@ -76,10 +67,10 @@ diff -u -r1.8 Makefile
 Index: devel/semi/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/devel/semi/Makefile,v
-retrieving revision 1.36
-diff -u -r1.36 Makefile
---- devel/semi/Makefile	25 Nov 2015 12:49:46 -0000	1.36
-+++ devel/semi/Makefile	14 Oct 2017 22:58:21 -0000
+retrieving revision 1.37
+diff -u -r1.37 Makefile
+--- devel/semi/Makefile	3 Nov 2019 10:39:30 -0000	1.37
++++ devel/semi/Makefile	26 Jan 2022 14:00:00 -0000
 @@ -64,8 +64,8 @@
  
  .include "options.mk"
@@ -88,26 +79,26 @@ diff -u -r1.36 Makefile
 +.include "../../wip/emacs-git/modules.mk"
  
 -.include "../../devel/apel/buildlink3.mk"
-+.include "../../wip/apel-git/buildlink3.mk"
++.include "../../local-mef/apel-snapshot/buildlink3.mk"
  .include "../../devel/flim/buildlink3.mk"
  .include "../../mk/bsd.pkg.mk"
 Index: misc/bbdb/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/misc/bbdb/Makefile,v
-retrieving revision 1.32
-diff -u -r1.32 Makefile
---- misc/bbdb/Makefile	29 Sep 2017 12:40:28 -0000	1.32
-+++ misc/bbdb/Makefile	14 Oct 2017 22:58:30 -0000
-@@ -11,7 +11,7 @@
- COMMENT=		Insidious Big Brother DataBase, a rolodex-like database Emacs program
+retrieving revision 1.34
+diff -u -r1.34 Makefile
+--- misc/bbdb/Makefile	13 Sep 2018 14:21:22 -0000	1.34
++++ misc/bbdb/Makefile	26 Jan 2022 14:00:00 -0000
+@@ -12,7 +12,7 @@
  
  # bbdb is included in xemacs-packages
--EMACS_VERSIONS_ACCEPTED=	emacs25 emacs21 emacs21nox
-+EMACS_VERSIONS_ACCEPTED=	emacs27 emacs26 emacs25 emacs21 emacs21nox
+ EMACS_VERSIONS_ACCEPTED=	emacs25 emacs25nox emacs21 emacs21nox
+-EMACS_VERSIONS_ACCEPTED+=	emacs26 emacs26nox
++EMACS_VERSIONS_ACCEPTED+=	emacs27 emacs26 emacs26nox
  
  CONFLICTS+=		xemacs-packages-[0-9]*
  
-@@ -25,7 +25,7 @@
+@@ -26,7 +26,7 @@
  INSTALLATION_DIRS=	${EMACS_INFOPREFIX}
  MAKE_JOBS_SAFE=		no
  
@@ -119,10 +110,10 @@ diff -u -r1.32 Makefile
 Index: misc/elscreen/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/misc/elscreen/Makefile,v
-retrieving revision 1.24
-diff -u -r1.24 Makefile
---- misc/elscreen/Makefile	29 Sep 2017 12:40:28 -0000	1.24
-+++ misc/elscreen/Makefile	14 Oct 2017 22:58:30 -0000
+retrieving revision 1.25
+diff -u -r1.25 Makefile
+--- misc/elscreen/Makefile	3 Nov 2019 17:04:21 -0000	1.25
++++ misc/elscreen/Makefile	26 Jan 2022 14:00:00 -0000
 @@ -31,7 +31,7 @@
  # Emacs 24 or later is not supported. Try wip/elscreen-current
  # instead.
@@ -131,7 +122,7 @@ diff -u -r1.24 Makefile
 +	emacs27 emacs26 emacs25 emacs21 emacs21nox \
  	emacs20
  
- INSTALLATION_DIRS+= ${EMACS_LISPPREFIX}/elscreen
+ INSTALLATION_DIRS+=	${EMACS_LISPPREFIX}/elscreen
 @@ -41,7 +41,7 @@
  	${INSTALL_DATA} ${WRKDIR}/*/*.el ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
  	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/elscreen
@@ -144,14 +135,14 @@ diff -u -r1.24 Makefile
 Index: print/auctex/Makefile
 ===================================================================
 RCS file: /cvsroot/pkgsrc/print/auctex/Makefile,v
-retrieving revision 1.42
-diff -u -r1.42 Makefile
---- print/auctex/Makefile	20 Aug 2016 12:27:32 -0000	1.42
-+++ print/auctex/Makefile	14 Oct 2017 22:58:33 -0000
-@@ -28,6 +28,6 @@
- CONFIGURE_ARGS.emacs=	--with-lispdir=${EMACS_LISPPREFIX}
- CONFIGURE_ARGS.xemacs=	--with-packagedir=${EMACS_LISPPREFIX:C|/lisp||}
+retrieving revision 1.61
+diff -u -r1.61 Makefile
+--- print/auctex/Makefile	8 Dec 2021 16:06:12 -0000	1.61
++++ print/auctex/Makefile	26 Jan 2022 14:00:00 -0000
+@@ -53,6 +53,6 @@
+ MAKE_DIRS_PERMS+=	${VARBASE}/auctex ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 1777
  
+ .include "../../print/ghostscript/buildlink3.mk"
 -.include "../../editors/emacs/modules.mk"
 +.include "../../wip/emacs-git/modules.mk"
  
