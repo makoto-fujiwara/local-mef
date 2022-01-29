@@ -20,7 +20,7 @@ DEPENDS += emacs26-[0-9]*:../../editors/emacs26
 #DEPENDS += MesaLib-[0-9]*:../../wip/MesaLib
 
 # to avoid devel/apel for oldstye backquote issue
-DEPENDS += apel-[0-9]*:../../wip/apel-git
+#EPENDS += apel-snapshot-[0-9]*:../../devel/apel-snapshot
 DEPENDS += flim-[0-9]*:../../local-mef/flim-git
 
 DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
