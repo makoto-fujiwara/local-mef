@@ -72,8 +72,8 @@ post-install:
 .include "../../wip/emacs-git/modules.mk"
 
 .if (${EMACS_FLAVOR} != "xemacs")
-BUILDLINK_API_DEPENDS.apel+=	apel-snapshot>=10.7
-.include "../../devel/apel-snapshot/buildlink3.mk"
+BUILDLINK_API_DEPENDS.apel+=	apel>=10.8
+.include "../../devel/apel/buildlink3.mk"
 .endif
 
 .include "../../mk/bsd.pkg.mk"

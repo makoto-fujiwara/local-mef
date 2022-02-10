@@ -11,7 +11,7 @@ BUILDLINK_PKGSRCDIR.flim?=	../../local-mef/flim-git
 
 BUILDLINK_CONTENTS_FILTER.flim=	${EGREP} '.*\.el$$|.*\.elc$$'
 
-.include "../../devel/apel-snapshot/buildlink3.mk"
+.include "../../devel/apel/buildlink3.mk"
 .endif # FLIM_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-flim
