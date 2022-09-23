@@ -31,7 +31,7 @@ DEPENDS += mu-cite-[0-9]*:../../wip/mu-cite
 DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 
 #EPENDS += wl-[0-9]*:../../wip/wl-git
-DEPENDS += wl-[0-9]*:../../mail/wl-snapshot
+#EPENDS += wl-[0-9]*:../../mail/wl-snapshot
 
 DEPENDS += auctex-[0-9]*:../../print/auctex
 DEPENDS += tc-[0-9]*:../../wip/tc

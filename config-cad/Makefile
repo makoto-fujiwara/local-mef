@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-cad-2021.10
+DISTNAME=       config-cad-2022.08
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -13,9 +13,12 @@ DEPENDS+=	p5-GD-[0-9]*:../../graphics/p5-GD
 DEPENDS+=	gdsreader-[0-9]*:../../wip/gdsreader
 DEPENDS+=	kicad-[0-9]*:../../cad/kicad
 #EPENDS+=	eagle-[0-9]*:../../cad/eagle
-DEPENDS+=	qcad-[0-9]*:../../cad/qcad
+#EPENDS+=	qcad-[0-9]*:../../cad/qcad
 DEPENDS+=	py[0-9]*-picture-to-gds-[0-9]*:../../wip/py-picture-to-gds
-DEPENDS+=	py[0-9]*-gds-[0-9]*:../../cad/py-gds
+
+DEPENDS+=	py[0-9]*-gdstk-[0-9]*:../../cad/py-gdstk
+DEPENDS+=	fstl-[0-9]*:../../cad/fstl
+DEPENDS+=	openscad-[0-9]*:../../cad/openscad
 
 
 META_PACKAGE=   yes
