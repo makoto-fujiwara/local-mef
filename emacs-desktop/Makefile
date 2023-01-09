@@ -2,6 +2,7 @@
 
 DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.08
 CATEGORIES=     local-mef
+PKG_REVISION=	1
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
 MAINTAINER=     packages@ki.nu
@@ -31,7 +32,7 @@ DEPENDS += mu-cite-[0-9]*:../../wip/mu-cite
 DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 
 #EPENDS += wl-[0-9]*:../../wip/wl-git
-#EPENDS += wl-[0-9]*:../../mail/wl-snapshot
+DEPENDS += wl-[0-9]*:../../mail/wl-snapshot
 
 DEPENDS += auctex-[0-9]*:../../print/auctex
 DEPENDS += tc-[0-9]*:../../wip/tc

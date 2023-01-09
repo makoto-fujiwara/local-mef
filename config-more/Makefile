@@ -9,7 +9,7 @@ HOMEPAGE=       http://www.ki.nu/OHP/
 COMMENT=        More meta-pkgs
 
 DEPENDS+= 	inkscape-[0-9]*:../../graphics/inkscape
-DEPENDS+= 	magicpoint-[0-9]*:../../graphics/magicpoint
+#EPENDS+= 	magicpoint-[0-9]*:../../graphics/magicpoint
 
 DEPENDS+=	exif-[0-9]*:../../graphics/exif
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp

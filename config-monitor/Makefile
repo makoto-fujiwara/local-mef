@@ -11,6 +11,6 @@ META_PACKAGE=   yes
 
 DEPENDS+= sysmon-[0-9]*:../../net/sysmon
 DEPENDS+= ipmitool-[0-9]*:../../sysutils/ipmitool
-DEPENDS+= net-snmp-[0-9]*:../../net/net-snmp
+#EPENDS+= net-snmp-[0-9]*:../../net/net-snmp
 
 .include "../../mk/bsd.pkg.mk"
