@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-set-20220923
+DISTNAME=       config-set-2023.0128
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -17,6 +17,7 @@ DEPENDS+=	config-latex-[0-9]*:../../local-mef/config-latex
 DEPENDS+=	config-graphics-[0-9]*:../../local-mef/config-graphics
 DEPENDS+=	config-R2021-[0-9]*:../../local-mef/config-R2021
 DEPENDS+=	config-R2022-[0-9]*:../../local-mef/config-R2022
+DEPENDS+=	config-R2023-[0-9]*:../../local-mef/config-R2023
 #EPENDS+=	config-databases-[0-9]*:../../local-mef/config-databases
 
 #EPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite

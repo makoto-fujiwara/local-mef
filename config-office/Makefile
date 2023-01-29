@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-office-2021.10
+DISTNAME=       config-office-2023.01
 CATEGORIES=     local-mef
 MASTER_SITES=   http://cvsweb.ki.nu/mef/personal-pkgsrc
 DISTFILES=      # empty
@@ -72,6 +72,8 @@ DEPENDS+=      gnuplot-[0-9]*:../../graphics/gnuplot
 
 DEPENDS+=	vncviewer-[0-9]*:../../net/vncviewer
 DEPENDS+=	base64-[0-9]*:../../converters/base64
+
+DEPENDS+=	feh-[0-9]*:../../graphics/feh
 
 
 #do-install:

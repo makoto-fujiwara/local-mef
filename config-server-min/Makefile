@@ -11,7 +11,7 @@ META_PACKAGE=   yes
 
 DEPENDS+= sysmon-[0-9]*:../../net/sysmon
 DEPENDS+= ipmitool-[0-9]*:../../sysutils/ipmitool
-DEPENDS+= net-snmp-[0-9]*:../../net/net-snmp
+#EPENDS+= net-snmp-[0-9]*:../../net/net-snmp
 #EPENDS+= samba>=4.0:../../net/samba4
 DEPENDS+= samba>=3.6:../../net/samba
 DEPENDS+= namazu-[0-9]*:../../local-mef/namazu-mef
