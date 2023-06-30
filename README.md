@@ -3,7 +3,7 @@
 Meta package for configuring various (my) local hosts.
 To be cloned at /usr/pkgsrc. Will result as /usr/pkgsrc/local-mef.
 
-# meta packages
+1. meta packages
 
 config-set: meta-pkg for whole set of Desktop, which includes some 800 packages
 
@@ -20,7 +20,7 @@ You'll see following lines in its Makefile
 - DEPENDS+=	config-R2022-[0-9]*:../../local-mef/config-R2022
 - DEPENDS+=	config-R2023-[0-9]*:../../local-mef/config-R2023
 
-# something before wip or testing, with the name of
+1. something before wip or testing, with the name of
 
   test-*
   
