@@ -20,7 +20,7 @@ You'll see following lines in its Makefile
 - DEPENDS+=	config-R2022-[0-9]*:../../local-mef/config-R2022
 - DEPENDS+=	config-R2023-[0-9]*:../../local-mef/config-R2023
 
-1. something before wip or testing, with the name of
+2. something before wip or testing, with the name of
 
   test-*
   
