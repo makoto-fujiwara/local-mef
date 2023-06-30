@@ -3,7 +3,7 @@
 Meta package for configuring various (my) local hosts.
 To be cloned at /usr/pkgsrc. Will result as /usr/pkgsrc/local-mef.
 
-config-set: meta-pkg for whole set of Desktop, some 800 packages
+config-set: meta-pkg for whole set of Desktop, which includes some 800 packages
 
 You'll see following lines in its Makefile
 
