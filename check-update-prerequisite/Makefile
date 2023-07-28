@@ -18,7 +18,7 @@ DEPENDS+=	p5-Algorithm-Diff-[0-9]*:../../devel/p5-Algorithm-Diff
 DEPENDS+=	mozilla-rootcerts-[0-9]*:../../security/mozilla-rootcerts
 DEPENDS+=	ruby-[0-9]*:../../lang/ruby
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
-DEPENDS+=	py[0-9]*-[0-9]*:../../devel/py-pip
+DEPENDS+=	py[0-9]*-pip-[[0-9]*:../../devel/py-pip
 DEPENDS+=	wget-[0-9]*:../../net/wget
 
 .include "../../mk/bsd.pkg.mk"
