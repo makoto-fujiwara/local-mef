@@ -1,3 +1,7 @@
+$NetBSD$
+
+sync to  lexical-binding
+
 --- /tmp/wip/flim/work/flim-1.14.9/./sasl-xoauth2.el	1970-01-01 09:00:00.000000000 +0900
 +++ ././sasl-xoauth2.el	2020-09-05 16:02:39.901994104 +0900
 @@ -0,0 +1,248 @@

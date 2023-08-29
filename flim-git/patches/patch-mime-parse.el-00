@@ -1,5 +1,9 @@
 $NetBSD$
 
+sync to  lexical-binding
+
+$NetBSD$
+
 string-to-int -> string-to-number
 
 --- mime-parse.el~	2005-07-06 11:09:04.000000000 +0900

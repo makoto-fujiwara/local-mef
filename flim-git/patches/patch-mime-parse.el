@@ -1,3 +1,7 @@
+$NetBSD$
+
+sync to  lexical-binding
+
 --- /tmp/wip/flim/work/flim-1.14.9/./mime-parse.el	2020-09-05 13:48:06.215015344 +0900
 +++ ././mime-parse.el	2020-09-05 16:02:39.901141091 +0900
 @@ -1,4 +1,4 @@

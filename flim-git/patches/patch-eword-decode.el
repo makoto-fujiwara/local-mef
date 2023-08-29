@@ -1,3 +1,7 @@
+$NetBSD$
+
+sync to  lexical-binding
+
 --- /tmp/wip/flim/work/flim-1.14.9/./eword-decode.el	2005-12-25 19:45:52.000000000 +0900
 +++ ././eword-decode.el	2020-09-05 16:02:39.898948422 +0900
 @@ -1,4 +1,4 @@

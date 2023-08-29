@@ -1,3 +1,7 @@
+$NetBSD$
+
+sync to  lexical-binding
+
 --- /tmp/wip/flim/work/flim-1.14.9/./mel.el	2007-06-18 19:58:54.000000000 +0900
 +++ ././mel.el	2020-09-05 16:02:39.900137733 +0900
 @@ -1,4 +1,4 @@

@@ -69,7 +69,7 @@ post-install:
 		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
 	done
 
-.include "../../wip/emacs-git/modules.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if (${EMACS_FLAVOR} != "xemacs")
 BUILDLINK_API_DEPENDS.apel+=	apel>=10.8

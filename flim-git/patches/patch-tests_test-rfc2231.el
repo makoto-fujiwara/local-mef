@@ -1,3 +1,7 @@
+$NetBSD$
+
+sync to  lexical-binding
+
 --- /tmp/wip/flim/work/flim-1.14.9/./tests/test-rfc2231.el	2001-05-31 11:38:29.000000000 +0900
 +++ ././tests/test-rfc2231.el	2018-07-29 22:48:22.287997569 +0900
 @@ -151,13 +151,13 @@
