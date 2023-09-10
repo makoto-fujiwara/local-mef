@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.3 2011/01/28 05:15:04 makoto Exp $
 # $Id: Makefile,v 1.21 2016/03/27 13:32:46 makoto Exp $
 
-DISTNAME=       check-update-prerequisite-0.2
+DISTNAME=       pbulk-addendum
 CATEGORIES=     local-mef
 META_PACKAGE=   yes
 
