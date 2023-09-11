@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2023-0.1
+DISTNAME=	config-R2023-0.2
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -11,5 +11,10 @@ META_PACKAGE=	yes
 
 DEPENDS+=	zathura-[0-9]*:../../print/zathura
 DEPENDS+=	feh-[0-9]*:../../graphics/feh
+DEPENDS+=	dwm-[0-9]*:../../wm/dwm
+DEPENDS+=	p5-Crypt-RandPasswd-[0-9]*:../../security/p5-Crypt-RandPasswd
+DEPENDS+=	rpm-[0-9]*:../../misc/rpm
+DEPENDS+=	ttyrec-[0-9]*:../../misc/ttyrec
+DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
 
 .include "../../mk/bsd.pkg.mk"
