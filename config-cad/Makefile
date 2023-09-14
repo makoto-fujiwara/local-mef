@@ -14,7 +14,7 @@ DEPENDS+=	gdsreader-[0-9]*:../../wip/gdsreader
 DEPENDS+=	kicad-[0-9]*:../../cad/kicad
 #EPENDS+=	eagle-[0-9]*:../../cad/eagle
 #EPENDS+=	qcad-[0-9]*:../../cad/qcad
-DEPENDS+=	py[0-9]*-picture-to-gds-[0-9]*:../../wip/py-picture-to-gds
+#EPENDS+=	py[0-9]*-picture-to-gds-[0-9]*:../../wip/py-picture-to-gds
 
 DEPENDS+=	py[0-9]*-gdstk-[0-9]*:../../cad/py-gdstk
 DEPENDS+=	fstl-[0-9]*:../../cad/fstl

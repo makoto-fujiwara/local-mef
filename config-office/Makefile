@@ -61,7 +61,7 @@ DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 
 DEPENDS+=	tex-platex-[0-9]*:../../print/tex-platex
 #EPENDS+=	ghostscript-cidfonts-ryumin-[0-9]*:../../fonts/ghostscript-cidfonts-ryumin
-DEPENDS+=	namazu-[0-9]*:../../local-mef/namazu-mef
+#EPENDS+=	namazu-[0-9]*:../../local-mef/namazu-mef
 DEPENDS+=	gnuplot-[0-9]*:../../graphics/gnuplot
 DEPENDS+=	p5-Jcode-[0-9]*:../../converters/p5-Jcode
 DEPENDS+=	libzip-[0-9]*:../../archivers/libzip
