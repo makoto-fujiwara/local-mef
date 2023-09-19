@@ -1,45 +1,47 @@
 # $NetBSD: Makefile.common,v 1.9 2005/09/09 15:58:41 makoto Exp $
 # $Id: Makefile.common,v 1.21 2012/05/14 08:53:41 makoto Exp $
 
+# used by local-mef/config-mail/Makefile
+
 # This file is to be inclued from config-serv or config-desktop
 
-DEPENDS += digest>=20010807:../../pkgtools/digest/
-DEPENDS += sudo>=1:../../security/sudo/
+DEPENDS+=  digest>=20010807:../../pkgtools/digest/
+DEPENDS+=  sudo>=1:../../security/sudo/
 ZSH_STATIC= yes
-DEPENDS += zsh>=4:../../shells/zsh/
+DEPENDS+=  zsh>=4:../../shells/zsh/
 
-DEPENDS += libtool-base>=1.4.20010614nb3:../../devel/libtool-base/ 
-DEPENDS += gettext-lib>=0.10.35nb1:../../devel/gettext-lib/  
+DEPENDS+=  libtool-base>=1.4.20010614nb3:../../devel/libtool-base/ 
+DEPENDS+=  gettext-lib>=0.10.35nb1:../../devel/gettext-lib/  
 .if ${MACHINE} == "macppc"
-DEPENDS += hfsutils>=2:../../sysutils/hfsutils
+DEPENDS+=  hfsutils>=2:../../sysutils/hfsutils
 .endif
 
 #
-DEPENDS += perl>=5.8.6nb2:../../lang/perl5/  
-DEPENDS += p5-Jcode>0.8:../../converters/p5-Jcode/
-DEPENDS += nkf>=2:../../converters/nkf
-DEPENDS += ack>=1:../../converters/ack
-DEPENDS += ja-less>=1:../../misc/ja-less
-DEPENDS += ja-a2ps>=1:../../print/ja-a2ps
+DEPENDS+=  perl>=5.8.6nb2:../../lang/perl5/  
+DEPENDS+=  p5-Jcode>0.8:../../converters/p5-Jcode/
+DEPENDS+=  nkf>=2:../../converters/nkf
+DEPENDS+=  ack>=1:../../converters/ack
+DEPENDS+=  ja-less>=1:../../misc/ja-less
+DEPENDS+=  ja-a2ps>=1:../../print/ja-a2ps
 #
-DEPENDS += sendmail-[0-9]*:../../mail/sendmail
-DEPENDS += m4>=1.4:../../devel/m4/  
-DEPENDS += autoconf>=2.13:../../devel/autoconf/
-DEPENDS += gmake>=3.79.1:../../devel/gmake/  
+DEPENDS+=  sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+=  m4>=1.4:../../devel/m4/  
+DEPENDS+=  autoconf>=2.13:../../devel/autoconf/
+DEPENDS+=  gmake>=3.79.1:../../devel/gmake/  
 
-DEPENDS += rsync>=2:../../net/rsync/
-DEPENDS += unzip>=5:../../archivers/unzip/
-#EPENDS += lha>=1:../../archivers/lha/
+DEPENDS+=  rsync>=2:../../net/rsync/
+DEPENDS+=  unzip>=5:../../archivers/unzip/
+EPENDS+=   lha>=1:../../archivers/lha/
 
-DEPENDS += screen>=3:../../misc/screen/
-DEPENDS += idutils>=1:../../devel/idutils
-DEPENDS += curl>=1:../../www/curl/
-DEPENDS += wget>=1:../../net/wget/
-DEPENDS += w3m>=0.5:../../www/w3m/
+DEPENDS+=  screen>=3:../../misc/screen/
+DEPENDS+=  idutils>=1:../../devel/idutils
+DEPENDS+=  curl>=1:../../www/curl/
+DEPENDS+=  wget>=1:../../net/wget/
+DEPENDS+=  w3m>=0.5:../../www/w3m/
 # required to install w3m
-DEPENDS += boehm-gc>=6:../../devel/boehm-gc/
-DEPENDS += pchar>=1:../../net/pchar/
-DEPENDS += bytebench>=4:../../benchmarks/bytebench/
-DEPENDS += ruby>=1.8:../../lang/ruby
-#EPENDS += cvsync-[0-9]*:../../devel/cvsync
-DEPENDS += pkglint-[0-9]*:../../pkgtools/pkglint
+DEPENDS+=  boehm-gc>=6:../../devel/boehm-gc/
+DEPENDS+=  pchar>=1:../../net/pchar/
+DEPENDS+=  bytebench>=4:../../benchmarks/bytebench/
+DEPENDS+=  ruby>=1.8:../../lang/ruby
+EPENDS+=   cvsync-[0-9]*:../../devel/cvsync
+DEPENDS+=  pkglint-[0-9]*:../../pkgtools/pkglint
