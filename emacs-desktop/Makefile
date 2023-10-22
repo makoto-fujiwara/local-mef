@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.09
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.10
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -13,15 +13,15 @@ DEPENDS += libXaw3d-[0-9]*:../../x11/libXaw3d
 #EPENDS += xpm-3.4k:../../graphics/xpm/
 #DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
 #EPENDS += emacs28-[0-9]*:../../editors/emacs-snapshot
-DEPENDS += emacs26-[0-9]*:../../editors/emacs26
-#EPENDS += emacs27-[0-9]*:../../editors/emacs27
+#EPENDS += emacs26-[0-9]*:../../editors/emacs26
+DEPENDS += emacs28-[0-9]*:../../editors/emacs28
 
 # To avoid depending to MesaLib-7.4.4
 #DEPENDS += MesaLib-[0-9]*:../../wip/MesaLib
 
 # to avoid devel/apel for oldstye backquote issue
 #EPENDS += apel-snapshot-[0-9]*:../../devel/apel-snapshot
-DEPENDS += flim-[0-9]*:../../local-mef/flim-git
+DEPENDS += flim-[0-9]*:../../devel/flim
 
 DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
