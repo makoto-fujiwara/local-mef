@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2023-0.4
+DISTNAME=	config-R2023-0.5
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -16,7 +16,7 @@ DEPENDS+=	p5-Crypt-RandPasswd-[0-9]*:../../security/p5-Crypt-RandPasswd
 DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 DEPENDS+=	ttyrec-[0-9]*:../../misc/ttyrec
 DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
-DEPENDS+=	qemnu-[0-9]*:../../emulators/qemu
+DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
 DEPENDS+=	mlterm-[0-9]*:../../x11/mlterm
 
 .include "../../mk/bsd.pkg.mk"
