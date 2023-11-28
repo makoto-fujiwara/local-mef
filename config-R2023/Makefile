@@ -16,11 +16,7 @@ DEPENDS+=	p5-Crypt-RandPasswd-[0-9]*:../../security/p5-Crypt-RandPasswd
 DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 DEPENDS+=	ttyrec-[0-9]*:../../misc/ttyrec
 DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
-<<<<<<< HEAD
 DEPENDS+=	qemnu-[0-9]*:../../emulators/qemu
 DEPENDS+=	mlterm-[0-9]*:../../x11/mlterm
-=======
-DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
->>>>>>> 23cd447 ((config-R2023/Makefile) correction on typo for qemu)
 
 .include "../../mk/bsd.pkg.mk"

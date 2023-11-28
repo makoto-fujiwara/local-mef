@@ -1,6 +1,0 @@
-tool	mktools-[0-9]*	../../pkgtools/mktools
-tool	cwrappers>=20150314	../../pkgtools/cwrappers
-full	sendmail-[0-9]*	../../mail/sendmail
-full	libkver-[0-9]*	../../pkgtools/libkver
-full	zsh-[0-9]*	../../shells/zsh
-full	net-snmp-[0-9]*	../../net/net-snmp
