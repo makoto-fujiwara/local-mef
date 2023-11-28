@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2023-0.3
+DISTNAME=	config-R2023-0.4
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -17,5 +17,6 @@ DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 DEPENDS+=	ttyrec-[0-9]*:../../misc/ttyrec
 DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
 DEPENDS+=	qemnu-[0-9]*:../../emulators/qemu
+DEPENDS+=	mlterm-[0-9]*:../../x11/mlterm
 
 .include "../../mk/bsd.pkg.mk"
