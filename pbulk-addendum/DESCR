@@ -4,7 +4,7 @@ The package to provide environment for pbulk
  cd /usr/pkgsrc/local-mef/pbulk-addendum
  env PATH=/usr/pkg_bulk/bin:/usr/pkg_bulk/sbin:${PATH} bmake package-install
 
- By purely personal preference, following package will be installed
+ By purely personal preference, following packages will be installed
    pbulk
    sendmail
    libkver
