@@ -1,1 +1,12 @@
-The package to provide environment to execute check-update
+The package to provide environment for pbulk
+1. bootstrap pkgsrc
+2.
+ cd /usr/pkgsrc/local-mef/pbulk-addendum
+ env PATH=/usr/pkg_bulk/bin:/usr/pkg_bulk/sbin:${PATH} bmake package-install
+
+ By purely personal preference, following package will be installed
+   pbulk
+   sendmail
+   libkver
+   zsh
+   net-snmp
