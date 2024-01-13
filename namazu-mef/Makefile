@@ -52,7 +52,7 @@ MAKE_JOBS_SAFE=		no
 pre-build:
 	${ECHO} pre-build is running
 	env LANG=ja_JP.eucJP csh ${FILESDIR}/japanize.csh ${WRKSRC}
-	cd ${WRKSRC}    && ./make_sjis_po
+#	cd ${WRKSRC}    && ./make_sjis_po
 	cd ${WRKSRC}/po && make update-gmo
 post-extract:
 	cd ${WRKSRC} && perl ${FILESDIR}/patch-filter
