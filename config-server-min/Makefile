@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-server-minimum-0.02
+DISTNAME=       config-server-minimum-0.03
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -11,10 +11,10 @@ META_PACKAGE=   yes
 
 DEPENDS+= sysmon-[0-9]*:../../net/sysmon
 DEPENDS+= ipmitool-[0-9]*:../../sysutils/ipmitool
-#EPENDS+= net-snmp-[0-9]*:../../net/net-snmp
-#EPENDS+= samba>=4.0:../../net/samba4
+DEPENDS+= net-snmp-[0-9]*:../../net/net-snmp
+DEPENDS+= samba>=4.0:../../net/samba4
 DEPENDS+= samba>=3.6:../../net/samba
-#EPENDS+= namazu-[0-9]*:../../local-mef/namazu-mef
+DEPENDS+= namazu-[0-9]*:../../local-mef/namazu-mef
 DEPENDS+= git-base-[0-9]*:../../devel/git-base
 
 DEPENDS+= check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
