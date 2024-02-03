@@ -8,8 +8,8 @@ HOMEPAGE=       http://www.ki.nu/OHP/
 COMMENT=        All set
 
 DEPENDS+=	config-desktop-[0-9]*:../../local-mef/config-desktop
-#EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	config-audio-[0-9]*:../../local-mef/config-audio
+DEPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	config-cad-[0-9]*:../../local-mef/config-cad
 DEPENDS+=	config-devel-[0-9]*:../../local-mef/config-devel
 DEPENDS+=	config-monitor-[0-9]*:../../local-mef/config-monitor
@@ -19,9 +19,9 @@ DEPENDS+=	config-graphics-[0-9]*:../../local-mef/config-graphics
 DEPENDS+=	config-R2021-[0-9]*:../../local-mef/config-R2021
 DEPENDS+=	config-R2022-[0-9]*:../../local-mef/config-R2022
 DEPENDS+=	config-R2023-[0-9]*:../../local-mef/config-R2023
-#EPENDS+=	config-databases-[0-9]*:../../local-mef/config-databases
+DEPENDS+=	config-databases-[0-9]*:../../local-mef/config-databases
 
-#EPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
+DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
 
 META_PACKAGE=   yes
 
