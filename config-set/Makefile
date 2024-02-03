@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-set-2023.0128
+DISTNAME=       config-set-2024.0202
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -9,6 +9,7 @@ COMMENT=        All set
 
 DEPENDS+=	config-desktop-[0-9]*:../../local-mef/config-desktop
 #EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
+DEPENDS+=	config-audio-[0-9]*:../../local-mef/config-audio
 DEPENDS+=	config-cad-[0-9]*:../../local-mef/config-cad
 DEPENDS+=	config-devel-[0-9]*:../../local-mef/config-devel
 DEPENDS+=	config-monitor-[0-9]*:../../local-mef/config-monitor
