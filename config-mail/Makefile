@@ -44,3 +44,5 @@ DEPENDS+=	spamass-milter>=0.3:../../mail/spamass-milter
 
 META_PACKAGE=	yes
 .include "../../mk/bsd.pkg.mk"
+../../mail/opendkim
+../../mail/dk-milter
