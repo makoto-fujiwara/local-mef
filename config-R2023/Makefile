@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2023-0.6
+DISTNAME=	config-R2023-0.12
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -18,7 +18,7 @@ DEPENDS+=	ttyrec-[0-9]*:../../misc/ttyrec
 DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
 DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
 DEPENDS+=	mlterm-[0-9]*:../../x11/mlterm
-DEPENDS+=	mozc-tool-[0-9]*:../../inputmethod/mozc-tool
-DEPENDS+=	mozc-server-[0-9]*:../../inputmethod/mozc-server
+
+DEPENDS+=	py-asciinema--[0-9]*:../misc/py-asciinema
 
 .include "../../mk/bsd.pkg.mk"
