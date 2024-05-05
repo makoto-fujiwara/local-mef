@@ -19,6 +19,6 @@ DEPENDS+=	ksh93-[0-9]*:../../shells/ksh93
 DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
 DEPENDS+=	mlterm-[0-9]*:../../x11/mlterm
 
-DEPENDS+=	py-asciinema--[0-9]*:../misc/py-asciinema
+DEPENDS+=	py[0-9]*-asciinema-[0-9]*:../../misc/py-asciinema
 
 .include "../../mk/bsd.pkg.mk"

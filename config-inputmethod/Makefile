@@ -9,9 +9,9 @@ COMMENT=	Inputmethos
 
 META_PACKAGE=	yes
 
-DEPENDS+=	mozc-elips-[0-9]*:../../inputmethod/mozc-elisp
+DEPENDS+=	mozc-elisp-[0-9]*:../../inputmethod/mozc-elisp
 DEPENDS+=	mozc-renderer-[0-9]*:../../inputmethod/mozc-renderer
 DEPENDS+=	mozc-server-[0-9]*:../../inputmethod/mozc-server
-DEPENDS+=	mozc-tools-[0-9]*:../../inputmethod/mozc-tool
+DEPENDS+=	mozc-tool-[0-9]*:../../inputmethod/mozc-tool
 
 .include "../../mk/bsd.pkg.mk"
