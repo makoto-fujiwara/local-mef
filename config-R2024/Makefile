@@ -12,5 +12,6 @@ META_PACKAGE=	yes
 DEPENDS+=	opendkim-[0-9]*:../../mail/opendkim
 DEPENDS+=	py-pypi-cli-[0-9]*:../../devel/py-pypi-cli
 DEPENDS+=	minicom-[0-9]*:../../net/minicom
+DEPENDS+=	rclone-[0-9]*:../../net/rclone
 
 .include "../../mk/bsd.pkg.mk"
