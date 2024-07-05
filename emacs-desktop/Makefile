@@ -12,9 +12,9 @@ DEPENDS += compface-[0-9]*:../../graphics/compface
 DEPENDS += libXaw3d-[0-9]*:../../x11/libXaw3d
 #EPENDS += xpm-3.4k:../../graphics/xpm/
 #DEPENDS += emacs27-[0-9]*:../../wip/emacs-git
-#EPENDS += emacs28-[0-9]*:../../editors/emacs-snapshot
+#EPENDS += emacs29-[0-9]*:../../editors/emacs-snapshot
 #EPENDS += emacs26-[0-9]*:../../editors/emacs26
-DEPENDS += emacs28-[0-9]*:../../editors/emacs28
+DEPENDS += emacs29-[0-9]*:../../editors/emacs29
 
 # To avoid depending to MesaLib-7.4.4
 #DEPENDS += MesaLib-[0-9]*:../../wip/MesaLib
