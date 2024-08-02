@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.10
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.11
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -27,7 +27,7 @@ DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
 DEPENDS += gnutls-[0-9]*:../../security/gnutls
 DEPENDS += im-[0-9]*:../../mail/im
-DEPENDS += mu-cite-[0-9]*:../../wip/mu-cite
+#EPENDS += mu-cite-[0-9]*:../../wip/mu-cite
 DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 
 #EPENDS += wl-[0-9]*:../../wip/wl-git
@@ -35,7 +35,7 @@ DEPENDS += wl-[0-9]*:../../wip/wl-snapshot
 
 DEPENDS += auctex-[0-9]*:../../print/auctex
 DEPENDS += tc-[0-9]*:../../wip/tc
-DEPENDS += twittering-mode-[0-9]*:../../wip/twittering-mode-git
+#EPENDS += twittering-mode-[0-9]*:../../wip/twittering-mode-git
 DEPENDS += elscreen-[0-9]*:../../misc/elscreen
 DEPENDS += umefont-ttf-[0-9]*:../../fonts/umefont-ttf
 #DEPENDS += magit-[0-9]*:../../devel/magit
