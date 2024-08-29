@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.11
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.12
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -27,7 +27,7 @@ DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
 DEPENDS += gnutls-[0-9]*:../../security/gnutls
 DEPENDS += im-[0-9]*:../../mail/im
-#EPENDS += mu-cite-[0-9]*:../../wip/mu-cite
+DEPENDS += mu-cite-[0-9]*:../../wip/mu-cite
 DEPENDS += x-face-e21-[0-9]*:../../local-mef/x-face-el
 
 #EPENDS += wl-[0-9]*:../../wip/wl-git
