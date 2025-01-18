@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-cad-2024.07
+DISTNAME=       config-cad-2025.01
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
@@ -16,10 +16,10 @@ DEPENDS+=	kicad-[0-9]*:../../cad/kicad
 #EPENDS+=	qcad-[0-9]*:../../cad/qcad
 #EPENDS+=	py[0-9]*-picture-to-gds-[0-9]*:../../wip/py-picture-to-gds
 
-DEPENDS+=	py[0-9]*-gdstk-[0-9]*:../../cad/py-gdstk
+#EPENDS+=	py[0-9]*-gdstk-[0-9]*:../../cad/py-gdstk
 DEPENDS+=	fstl-[0-9]*:../../cad/fstl
 DEPENDS+=	openscad-[0-9]*:../../cad/openscad
-#EPENDS+=	gwyddion-[0-9]*:../../wip/gwyddion
+DEPENDS+=	gwyddion-[0-9]*:../../wip/gwyddion
 
 
 META_PACKAGE=   yes
