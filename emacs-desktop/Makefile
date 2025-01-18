@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.12
+DISTNAME=       emacs-desktop-${EMACS_TYPE:C/emacs//}em0.13
 CATEGORIES=     local-mef
 
 PKG_DESTDIR_SUPPORT=    user-destdir    # really meaningless for meta-pkg
@@ -45,6 +45,7 @@ DEPENDS += tamago-tsunagi-[0-9]*:../../inputmethod/tamago-tsunagi
 DEPENDS += riece-[0-9]*:../../chat/riece
 
 DEPENDS += php-mode-[0-9]*:../../devel/php-mode
+DEPENDS += magit-[0-9]*:../../wip/magit-git
 
 META_PACKAGE=   yes
 
