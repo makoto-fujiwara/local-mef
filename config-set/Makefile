@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=       config-set-2024.0202
+DISTNAME=       config-set-2024.1011
 CATEGORIES=     meta-pkgs
 
 MAINTAINER=     packages@ki.nu
