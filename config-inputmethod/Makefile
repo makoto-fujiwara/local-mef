@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-inputmethod-0.2024.07
+DISTNAME=	config-inputmethod-0.2024.09
 CATEGORIES=	meta-pkgs
 
 MAINTAINER=	packages@ki.nu
@@ -9,10 +9,10 @@ COMMENT=	Inputmethos
 
 META_PACKAGE=	yes
 
-DEPENDS+=	mozc-elisp-[0-9]*:../../inputmethod/mozc-elisp
-DEPENDS+=	mozc-renderer-[0-9]*:../../inputmethod/mozc-renderer
-DEPENDS+=	mozc-server-[0-9]*:../../inputmethod/mozc-server
-DEPENDS+=	mozc-tool-[0-9]*:../../inputmethod/mozc-tool
+#EPENDS+=	mozc-elisp-[0-9]*:../../inputmethod/mozc-elisp
+#EPENDS+=	mozc-renderer-[0-9]*:../../inputmethod/mozc-renderer
+#EPENDS+=	mozc-server-[0-9]*:../../inputmethod/mozc-server
+#EPENDS+=	mozc-tool-[0-9]*:../../inputmethod/mozc-tool
 DEPENDS+=	ibus-tutcode-[0-9]*:../../wip/ibus-tutcode
 
 .include "../../mk/bsd.pkg.mk"
