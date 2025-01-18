@@ -1,11 +1,11 @@
 # $NetBSD$
 
-DISTNAME=	config-R2024-0.8
+DISTNAME=	config-R2024-0.10
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
 HOMEPAGE=	http://www.ki.nu/OHP/
-COMMENT=	Meta package for 2023
+COMMENT=	Meta package for 2024
 
 META_PACKAGE=	yes
 
@@ -16,6 +16,7 @@ DEPENDS+=	bython-[0-9]*:../../lang/bython
 DEPENDS+=	ibus-tutcode-[0-9]*:../../wip/ibus-tutcode
 DEPENDS+=	p5-App-ClusterSSH-[0-9]*:../../security/clusterssh
 DEPENDS+=	gwyddion-[0-9]*:../../wip/gwyddion
+DEPENDS+=	git-filter-repo-[0-9]*:../../devel/git-filter-repo
 
 
 .include "../../lang/python/pyversion.mk"
