@@ -67,7 +67,7 @@ DEPENDS+=	p5-Jcode-[0-9]*:../../converters/p5-Jcode
 DEPENDS+=	libzip-[0-9]*:../../archivers/libzip
 DEPENDS+=	apache-[0-9]*:../../www/apache24
 
-DEPENDS+=      php-[0-9]*:../../lang/php74
+#EPENDS+=      php-[0-9]*:../../lang/php74
 DEPENDS+=      gnuplot-[0-9]*:../../graphics/gnuplot
 
 DEPENDS+=	vncviewer-[0-9]*:../../net/vncviewer
