@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2024-0.10
+DISTNAME=	config-R2024-0.7
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -13,7 +13,7 @@ DEPENDS+=	opendkim-[0-9]*:../../mail/opendkim
 DEPENDS+=	${PYPKGPREFIX}-pypi-cli-[0-9]*:../../devel/py-pypi-cli
 DEPENDS+=	minicom-[0-9]*:../../comms/minicom
 DEPENDS+=	bython-[0-9]*:../../lang/bython
-DEPENDS+=	ibus-tutcode-[0-9]*:../../wip/ibus-tutcode
+#EPENDS+=	ibus-tutcode-[0-9]*:../../wip/ibus-tutcode
 DEPENDS+=	p5-App-ClusterSSH-[0-9]*:../../security/clusterssh
 DEPENDS+=	gwyddion-[0-9]*:../../wip/gwyddion
 DEPENDS+=	git-filter-repo-[0-9]*:../../devel/git-filter-repo
