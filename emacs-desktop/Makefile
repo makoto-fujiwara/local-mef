@@ -23,7 +23,7 @@ DEPENDS += emacs29-[0-9]*:../../editors/emacs29
 #EPENDS += apel-snapshot-[0-9]*:../../devel/apel-snapshot
 DEPENDS += flim-[0-9]*:../../devel/flim
 
-DEPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
+#EPENDS += emacs-w3m-[0-9]*:../../www/emacs-w3m-snapshot
 DEPENDS += gnupg-[0-9]*:../../security/gnupg
 DEPENDS += gnutls-[0-9]*:../../security/gnutls
 DEPENDS += im-[0-9]*:../../mail/im
