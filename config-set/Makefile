@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-set-2025.0831
+DISTNAME=	config-set-2026.0228
 CATEGORIES=	meta-pkgs
 
 MAINTAINER=	packages@ki.nu
@@ -21,6 +21,7 @@ DEPENDS+=	config-R2022-[0-9]*:../../local-mef/config-R2022
 DEPENDS+=	config-R2023-[0-9]*:../../local-mef/config-R2023
 DEPENDS+=	config-R2024-[0-9]*:../../local-mef/config-R2024
 DEPENDS+=	config-R2025-[0-9]*:../../local-mef/config-R2025
+DEPENDS+=	config-R2026-[0-9]*:../../local-mef/config-R2026
 DEPENDS+=	config-databases-[0-9]*:../../local-mef/config-databases
 DEPENDS+=	config-www-[0-9]*:../../local-mef/config-www
 DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
