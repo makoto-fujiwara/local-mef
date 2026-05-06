@@ -15,3 +15,4 @@ DEPENDS+=	rkdeveloptool-[0-9]*:../../sysutils/rkdeveloptool
 
 .include "../../lang/python/pyversion.mk"
 .include "../../mk/bsd.pkg.mk"
+../security/clusterssh
