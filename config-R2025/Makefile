@@ -11,7 +11,7 @@ META_PACKAGE=	yes
 
 DEPENDS+=	ibus-m17n-[0-9]*:../../inputmethod/ibus-m17n
 DEPENDS+=	rkdeveloptool-[0-9]*:../../sysutils/rkdeveloptool
-DEPENDS+=	clusterssh-[0-9]*:../security/clusterssh
+DEPENDS+=	p5-App-ClusterSSH-[0-9]*:../../security/clusterssh
 
 
 .include "../../lang/python/pyversion.mk"
