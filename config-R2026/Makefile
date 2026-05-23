@@ -11,5 +11,6 @@ META_PACKAGE=	yes
 
 DEPENDS+=	nodejs-[0-9]*:../../lang/nodejs
 DEPENDS+=	php[0-9]*-composer-[0-9]*:../../devel/php-composer
+DEPENDS+=	bob-[0-9]*:../../wip/bob
 
 .include "../../mk/bsd.pkg.mk"

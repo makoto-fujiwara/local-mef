@@ -24,6 +24,7 @@ DEPENDS+=	config-R2025-[0-9]*:../../local-mef/config-R2025
 DEPENDS+=	config-R2026-[0-9]*:../../local-mef/config-R2026
 DEPENDS+=	config-databases-[0-9]*:../../local-mef/config-databases
 DEPENDS+=	config-www-[0-9]*:../../local-mef/config-www
+DEPENDS+=	config-selenium-[0-9]*:../../local-mef/config-selenium
 DEPENDS+=	check-update-prerequisite-[0-9]*:../../local-mef/check-update-prerequisite
 
 META_PACKAGE=	yes
