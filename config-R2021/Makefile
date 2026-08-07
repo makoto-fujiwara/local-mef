@@ -21,7 +21,7 @@ DEPENDS+=	import-package-[0-9]*:../../pkgtools/import-package
 # following are for 0.02
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	gdsreader-[0-9]*:../../wip/gdsreader
-DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
+#DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
 DEPENDS+=	qrencode-[0-9]*:../../converters/qrencode
 DEPENDS+=	ssh-askpass-[0-9]*:../../security/ssh-askpass
 

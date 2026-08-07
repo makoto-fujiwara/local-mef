@@ -41,7 +41,7 @@ DEPENDS+=	p5-Syntax-Highlight-Perl-Improved-[0-9]*:../../wip/p5-Syntax-Highlight
 DEPENDS+=	ssh-askpass-[0-9]*:../../security/ssh-askpass
 DEPENDS+=	p5-Math-Bezier-[0-9]*:../../math/p5-Math-Bezier
 DEPENDS+=	fontforge-[0-9]*:../../fonts/fontforge
-DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
+#EPENDS+=	ripmime-[0-9]*:../../mail/ripmime
 
 META_PACKAGE=   yes
 

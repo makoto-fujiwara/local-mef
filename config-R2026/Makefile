@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	config-R2026-0.1
+DISTNAME=	config-R2026-0.2
 CATEGORIES=	local-mef
 
 MAINTAINER=	packages@ki.nu
@@ -11,6 +11,10 @@ META_PACKAGE=	yes
 
 DEPENDS+=	nodejs-[0-9]*:../../lang/nodejs
 DEPENDS+=	php[0-9]*-composer-[0-9]*:../../devel/php-composer
-DEPENDS+=	bob-[0-9]*:../../wip/bob
+DEPENDS+=	bob-[0-9]*:../../pkgtools/bob
+DEPENDS+=	config-selenium-[0-9]*:../../local-mef/config-selenium
+DEPENDS+=	freerdp2-[0-9]*:../../net/freerdb2
+DEPENDS+=	wine-[0-9]*:../../emulator/wine
+DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
 
 .include "../../mk/bsd.pkg.mk"

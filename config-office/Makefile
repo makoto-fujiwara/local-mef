@@ -47,7 +47,7 @@ DEPENDS+=	p5-gds2-[0-9]*:../../cad/p5-gds2
 
 #EPENDS+=	pgstudio-[0-9]*:../../wip/pgstudio
 DEPENDS+=	demime-[0-9]*:../../mail/demime
-DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
+#DEPENDS+=	ripmime-[0-9]*:../../mail/ripmime
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	ja-a2ps-[0-9]*:../../print/ja-a2ps
