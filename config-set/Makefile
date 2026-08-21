@@ -9,7 +9,7 @@ COMMENT=	All set
 
 DEPENDS+=	config-desktop-[0-9]*:../../local-mef/config-desktop
 DEPENDS+=	config-audio-[0-9]*:../../local-mef/config-audio
-DEPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
+#EPENDS+=	emacs-desktop-[0-9]*:../../local-mef/emacs-desktop
 DEPENDS+=	config-cad-[0-9]*:../../local-mef/config-cad
 DEPENDS+=	config-devel-[0-9]*:../../local-mef/config-devel
 DEPENDS+=	config-monitor-[0-9]*:../../local-mef/config-monitor
