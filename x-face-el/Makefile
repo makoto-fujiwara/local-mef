@@ -2,7 +2,7 @@
 #
 
 DISTNAME=       x-face-e21
-PKGNAME=	x-face-e21-0.1
+PKGNAME=	${EMACS_PKGNAME_PREFIX}x-face-e21-0.1
 MASTER_SITES=   http://www.jpl.org/ftp/pub/elisp/
 CATEGORIES=     misc
 EXTRACT_SUFX=   .el.gz
